@@ -1,0 +1,13 @@
+{
+  "extraKnownMarketplaces": {
+    "travel-agent": {
+      "source": {
+        "source": "github",
+        "repo": "apljacob/travel-agent"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "travel-agent@travel-agent": true
+  }
+}
