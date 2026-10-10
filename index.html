@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Autumn in Japan · 15-Day Itinerary</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>/* =========================================================================
+   Ember Design System — colors_and_type.css
+   Import this file to get every brand token as a CSS variable.
+   ========================================================================= */
+
+:root {
+  /* ---------- Base palette --------------------------------------------- */
+  --ember:           #C8442A;   /* signature terracotta */
+  --ember-dark:      #A8371F;
+  --ember-light:     #E06847;
+  --ember-wash:      #F8E4DB;   /* tinted background */
+
+  --amber:           #E8A268;
+  --amber-dark:      #C8854A;
+  --amber-light:     #F2BE8E;
+  --amber-wash:      #FCEFE0;
+
+  --espresso:        #2B2018;
+  --espresso-90:     rgba(43, 32, 24, 0.90);
+  --espresso-70:     rgba(43, 32, 24, 0.70);
+  --espresso-50:     rgba(43, 32, 24, 0.50);
+  --espresso-30:     rgba(43, 32, 24, 0.30);
+  --espresso-10:     rgba(43, 32, 24, 0.10);
+  --espresso-06:     rgba(43, 32, 24, 0.06);
+
+  --parchment:       #FBF7F0;   /* default canvas, warm off-white */
+  --parchment-soft:  #F9F3E9;
+  --sand:            #F5E6D3;   /* secondary surfaces */
+  --sand-dark:       #EAD6B8;
+  --linen:           #EFE3D0;   /* subtle stripe / alt row */
+
+  --border:          #E8DCC7;
+  --border-strong:   #D4C2A0;
+
+  /* Semantic utility (kept warm) */
+  --success:         #4F7A3F;
+  --success-wash:    #E8EEDF;
+  --warning:         #D99A2B;
+  --warning-wash:    #FBEFD4;
+  --danger:          #B83A2A;
+  --danger-wash:     #F6DED8;
+  --info:            #5A6B7D;
+  --info-wash:       #E4E8ED;
+
+  /* ---------- Semantic aliases ----------------------------------------- */
+  --surface-primary:     var(--parchment);
+  --surface-secondary:   var(--sand);
+  --surface-tertiary:    var(--linen);
+  --surface-inverse:     var(--espresso);
+  --surface-raised:      #FFFFFF;           /* floating menus, modals */
+
+  --text-primary:        var(--espresso);
+  --text-secondary:      var(--espresso-70);
+  --text-tertiary:       var(--espresso-50);
+  --text-inverse:        var(--parchment);
+  --text-brand:          var(--ember);
+  --text-link:           var(--ember);
+
+  --border-subtle:       var(--espresso-10);
+  --border-default:      var(--border);
+  --border-emphasis:     var(--border-strong);
+  --border-focus:        var(--ember);
+
+  --accent-primary:      var(--ember);
+  --accent-secondary:    var(--amber);
+
+  /* Hover / press overlays */
+  --hover-overlay:       rgba(43, 32, 24, 0.04);
+  --hover-overlay-dark:  rgba(255, 255, 255, 0.08);
+  --press-overlay:       rgba(43, 32, 24, 0.08);
+
+  /* ---------- Type families -------------------------------------------- */
+  --font-sans:    'Geist', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --font-mono:    'Geist Mono', ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
+  --font-serif:   'Instrument Serif', Georgia, 'Times New Roman', serif;
+
+  /* ---------- Type scale (modular 1.25, anchor 16) --------------------- */
+  --text-xs:      0.75rem;    /* 12 */
+  --text-sm:      0.875rem;   /* 14 */
+  --text-base:    1rem;       /* 16 */
+  --text-md:      1.125rem;   /* 18 */
+  --text-lg:      1.25rem;    /* 20 */
+  --text-xl:      1.5rem;     /* 24 */
+  --text-2xl:     1.875rem;   /* 30 */
+  --text-3xl:     2.25rem;    /* 36 */
+  --text-4xl:     3rem;       /* 48 */
+  --text-5xl:     3.75rem;    /* 60 */
+  --text-6xl:     4.75rem;    /* 76 */
+
+  --leading-tight:  1.15;
+  --leading-snug:   1.3;
+  --leading-normal: 1.5;
+  --leading-loose:  1.7;
+
+  --tracking-tight:  -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide:   0.04em;
+  --tracking-eyebrow: 0.08em;
+
+  --weight-light:    300;
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+
+  /* ---------- Spacing (8pt base) --------------------------------------- */
+  --space-0:   0;
+  --space-1:   4px;
+  --space-2:   8px;
+  --space-3:   12px;
+  --space-4:   16px;
+  --space-5:   20px;
+  --space-6:   24px;
+  --space-8:   32px;
+  --space-10:  40px;
+  --space-12:  48px;
+  --space-16:  64px;
+  --space-20:  80px;
+  --space-24:  96px;
+  --space-32:  128px;
+
+  /* ---------- Radii ---------------------------------------------------- */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-pill: 999px;
+
+  /* ---------- Shadows (warm, espresso-tinted) -------------------------- */
+  --shadow-xs:   0 1px 2px rgba(43, 32, 24, 0.06);
+  --shadow-sm:   0 2px 8px rgba(43, 32, 24, 0.08);
+  --shadow-md:   0 8px 24px rgba(43, 32, 24, 0.10);
+  --shadow-lg:   0 24px 64px rgba(43, 32, 24, 0.14);
+  --shadow-glow: 0 0 0 4px rgba(200, 68, 42, 0.12);
+  --shadow-inset-sm: inset 0 1px 2px rgba(43, 32, 24, 0.06);
+  --shadow-focus: 0 0 0 2px var(--parchment), 0 0 0 4px var(--ember);
+
+  /* ---------- Motion --------------------------------------------------- */
+  --ease-settle: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --dur-micro:   120ms;
+  --dur-small:   200ms;
+  --dur-base:    320ms;
+  --dur-large:   480ms;
+
+  /* ---------- Z ---------------------------------------------------------*/
+  --z-base: 1;
+  --z-raised: 10;
+  --z-dropdown: 100;
+  --z-modal: 1000;
+  --z-toast: 2000;
+}
+
+/* =========================================================================
+   Semantic element styles — drop-in defaults
+   ========================================================================= */
+
+html { background: var(--surface-primary); color: var(--text-primary); }
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  color: var(--text-primary);
+  background: var(--surface-primary);
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: 'ss01', 'cv11';
+}
+
+h1, .h1 {
+  font-family: var(--font-sans);
+  font-size: var(--text-5xl);
+  font-weight: var(--weight-semibold);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--text-primary);
+  margin: 0;
+}
+
+h2, .h2 {
+  font-family: var(--font-sans);
+  font-size: var(--text-3xl);
+  font-weight: var(--weight-semibold);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--text-primary);
+  margin: 0;
+}
+
+h3, .h3 {
+  font-family: var(--font-sans);
+  font-size: var(--text-xl);
+  font-weight: var(--weight-medium);
+  line-height: var(--leading-snug);
+  color: var(--text-primary);
+  margin: 0;
+}
+
+h4, .h4 {
+  font-family: var(--font-sans);
+  font-size: var(--text-lg);
+  font-weight: var(--weight-medium);
+  line-height: var(--leading-snug);
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.display {
+  font-family: var(--font-sans);
+  font-size: var(--text-6xl);
+  font-weight: var(--weight-semibold);
+  line-height: var(--leading-tight);
+  letter-spacing: -0.025em;
+}
+
+.display-serif {
+  font-family: var(--font-serif);
+  font-size: var(--text-6xl);
+  font-weight: var(--weight-regular);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  font-style: italic;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-medium);
+  line-height: 1;
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+p, .body {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  color: var(--text-primary);
+  margin: 0;
+  text-wrap: pretty;
+}
+
+.body-sm {
+  font-size: var(--text-sm);
+  line-height: var(--leading-normal);
+  color: var(--text-secondary);
+}
+
+.caption {
+  font-size: var(--text-xs);
+  line-height: var(--leading-normal);
+  color: var(--text-tertiary);
+}
+
+code, .code, kbd {
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  background: var(--sand);
+  color: var(--text-primary);
+  padding: 2px 6px;
+  border-radius: var(--radius-xs);
+  border: 1px solid var(--border-default);
+}
+
+kbd {
+  display: inline-block;
+  min-width: 20px;
+  text-align: center;
+  box-shadow: var(--shadow-xs);
+}
+
+a {
+  color: var(--text-link);
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  transition: opacity var(--dur-micro) var(--ease-settle);
+}
+a:hover { opacity: 0.75; }
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--border-default);
+  margin: var(--space-8) 0;
+}
+
+blockquote {
+  font-family: var(--font-serif);
+  font-size: var(--text-2xl);
+  font-style: italic;
+  line-height: 1.3;
+  color: var(--text-primary);
+  border-left: 2px solid var(--ember);
+  padding-left: var(--space-5);
+  margin: 0;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+</style>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--parchment)}
+  img{max-width:100%;display:block}
+  ul{margin:0}
+  a{color:var(--ember)}
+  a:hover{opacity:.7}
+  @media(max-width:720px){.two-col{grid-template-columns:1fr !important}}
+</style>
+</head>
+<body>
+<div style="background:var(--parchment);color:var(--text-primary);font-family:var(--font-sans);padding:var(--space-20) 0 var(--space-12)">
+<div style="max-width:900px;margin:0 auto;padding:0 var(--space-6);display:flex;flex-direction:column;gap:var(--space-20)">
+
+  <header style="display:flex;flex-direction:column;gap:var(--space-5)">
+    <div class="eyebrow">Travel itinerary · 15 days</div>
+    <h1 style="font-size:clamp(2.6rem,7vw,var(--text-6xl));font-weight:600;letter-spacing:-.025em;line-height:1.05">Autumn in <span style="font-family:var(--font-serif);font-style:italic;font-weight:400;color:var(--ember)">Japan</span></h1>
+    <p style="font-size:var(--text-md);color:var(--text-secondary);max-width:56ch">Kansai, the Hokuriku coast and the Chūbu mountains — chasing the momiji.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:var(--space-6);border-top:1px solid var(--border-default);padding-top:var(--space-5);margin-top:var(--space-2)">
+      <div><div class="eyebrow" style="margin-bottom:var(--space-2)">Dates</div><div style="font-family:var(--font-mono);font-size:var(--text-sm)">14 → 28 Nov 2026</div></div>
+      <div><div class="eyebrow" style="margin-bottom:var(--space-2)">Home by</div><div style="font-family:var(--font-mono);font-size:var(--text-sm)">29 Nov · Singapore</div></div>
+      <div style="grid-column:span 2"><div class="eyebrow" style="margin-bottom:var(--space-2)">Route</div><div style="font-size:var(--text-sm);color:var(--text-secondary);line-height:1.7"><strong>Osaka</strong> (+ Minoh, Amanohashidate) → <strong>Kyoto</strong> (+ Uji) → <strong>Kanazawa</strong> → bus → Shirakawa-gō → <strong>Takayama</strong> → rail → <strong>Nagoya</strong> → Kōrankei → fly home</div></div>
+    </div>
+  </header>
+
+  <section>
+    <div style="display:flex;align-items:baseline;gap:var(--space-4);margin-bottom:var(--space-6)">
+      <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--amber-dark);letter-spacing:.08em">01</span>
+      <h2 style="font-size:var(--text-2xl);font-weight:600">Flights</h2>
+    </div>
+    <div class="two-col" style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-4)">
+      <div style="background:var(--sand);border-radius:var(--radius-md);padding:var(--space-5) var(--space-6);box-shadow:var(--shadow-xs)">
+        <div class="eyebrow" style="margin-bottom:var(--space-5)">Outbound · booked</div>
+        <div style="display:flex;align-items:center;gap:var(--space-4)">
+          <div><div style="font-family:var(--font-mono);font-size:var(--text-xl);font-weight:500">SIN</div><div style="font-family:var(--font-mono);font-size:var(--text-sm);color:var(--text-secondary)">Sat 14 · 01:30</div><div style="font-size:var(--text-xs);color:var(--text-tertiary)">Changi T2</div></div>
+          <div style="flex:1;border-top:1px dashed var(--border-strong)"></div>
+          <div style="text-align:right"><div style="font-family:var(--font-mono);font-size:var(--text-xl);font-weight:500">KIX</div><div style="font-family:var(--font-mono);font-size:var(--text-sm);color:var(--text-secondary)">Sat 14 · 08:35</div><div style="font-size:var(--text-xs);color:var(--text-tertiary)">Kansai T1</div></div>
+        </div>
+      </div>
+      <div style="background:var(--sand);border-radius:var(--radius-md);padding:var(--space-5) var(--space-6);box-shadow:var(--shadow-xs)">
+        <div class="eyebrow" style="margin-bottom:var(--space-5)">Return · booked</div>
+        <div style="display:flex;align-items:center;gap:var(--space-4)">
+          <div><div style="font-family:var(--font-mono);font-size:var(--text-xl);font-weight:500">NGO</div><div style="font-family:var(--font-mono);font-size:var(--text-sm);color:var(--text-secondary)">Sat 28 · 15:15</div><div style="font-size:var(--text-xs);color:var(--text-tertiary)">Chubu Centrair T1</div></div>
+          <div style="flex:1;border-top:1px dashed var(--ember-light)"></div>
+          <div style="text-align:right"><div style="font-family:var(--font-mono);font-size:var(--text-xl);font-weight:500">SIN</div><div style="font-family:var(--font-mono);font-size:var(--text-sm);color:var(--text-secondary)">Sun 29 · 05:40</div><div style="font-size:var(--text-xs);color:var(--text-tertiary)">Changi T4</div></div>
+        </div>
+        <p style="font-size:var(--text-sm);color:var(--text-secondary);line-height:1.6;margin-top:var(--space-5)">Home from Nagoya (Centrair) on the 28th — CX539 to Hong Kong (15:15–19:10), a 6½-hour layover, then CX659 overnight to Singapore, landing Changi 05:40 on the 29th. No loop back to Osaka; the last two days stay in Nagoya.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div style="display:flex;align-items:baseline;gap:var(--space-4);margin-bottom:var(--space-4)">
+      <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--amber-dark);letter-spacing:.08em">02</span>
+      <h2 style="font-size:var(--text-2xl);font-weight:600">Book these — in order</h2>
+    </div>
+    <p style="color:var(--text-secondary);max-width:64ch;margin-bottom:var(--space-6)">Sorted by when the booking window opens. Reserved-seat trains and the highway bus open one month before travel — the same calendar day of the prior month, 10:00 JST (9am SGT) — so set reminders and book the minute they open over the foliage weekend.</p>
+    <div style="background:var(--surface-raised);border-radius:var(--radius-md);padding:var(--space-6);box-shadow:var(--shadow-sm)">
+      <ul style="list-style:none;padding-left:0;display:flex;flex-direction:column;gap:var(--space-4);font-size:var(--text-sm);color:var(--text-secondary);line-height:1.6">
+        <li style="display:flex;gap:var(--space-3);align-items:flex-start"><input type="checkbox" checked style="margin-top:3px;flex:0 0 auto;width:16px;height:16px;accent-color:var(--ember)"><div><span style="display:inline-block;font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;color:var(--ember);background:var(--ember-wash);padding:2px 7px;border-radius:var(--radius-xs);margin-right:6px;white-space:nowrap">Booked ✓</span><strong>Flights &amp; all hotels</strong> — return <strong>NGO → HKG → SIN</strong> (CX539/CX659, 28 Nov) and all five hotels are set. Nothing big-ticket left to reserve — the train and bus windows below are the remaining time-sensitive bookings.</div></li>
+        <li style="display:flex;gap:var(--space-3);align-items:flex-start"><input type="checkbox" style="margin-top:3px;flex:0 0 auto;width:16px;height:16px;accent-color:var(--ember)"><div><span style="display:inline-block;font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;color:var(--ember);background:var(--ember-wash);padding:2px 7px;border-radius:var(--radius-xs);margin-right:6px;white-space:nowrap">Now</span><strong>Amanohashidate, Ine &amp; Miyama coach tour</strong> (Pelago) for D3 · 16 Nov — autumn dates fill; flights are booked, so lock it in now.</div></li>
+        <li style="display:flex;gap:var(--space-3);align-items:flex-start"><input type="checkbox" style="margin-top:3px;flex:0 0 auto;width:16px;height:16px;accent-color:var(--ember)"><div><span style="display:inline-block;font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;color:var(--ember);background:var(--ember-wash);padding:2px 7px;border-radius:var(--radius-xs);margin-right:6px;white-space:nowrap">~14 Oct</span><strong>Pokémon Café</strong> (Shinsaibashi DX), if you want it — slots open 31 days before your visit, so ~14 Oct for a D1 stop. Books out within minutes.</div></li>
+        <li style="display:flex;gap:var(--space-3);align-items:flex-start"><input type="checkbox" style="margin-top:3px;flex:0 0 auto;width:16px;height:16px;accent-color:var(--ember)"><div><span style="display:inline-block;font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;color:var(--ember);background:var(--ember-wash);padding:2px 7px;border-radius:var(--radius-xs);margin-right:6px;white-space:nowrap">~15 Oct</span><strong>Enkō-ji</strong> autumn timed-entry for D5 · 18 Nov — reservations open Oct 15 at enkouji.jp (~¥1,500, last entry 16:30).</div></li>
+        <li style="display:flex;gap:var(--space-3);align-items:flex-start"><input type="checkbox" style="margin-top:3px;flex:0 0 auto;width:16px;height:16px;accent-color:var(--ember)"><div><span style="display:inline-block;font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;color:var(--ember);background:var(--ember-wash);padding:2px 7px;border-radius:var(--radius-xs);margin-right:6px;white-space:nowrap">~17 Oct</span><strong>Murin-an</strong> garden entry for D4 · 17 Nov — reserve online when the slot opens; autumn capacity is capped.</div></li>
+        <li style="display:flex;gap:var(--space-3);align-items:flex-start"><input type="checkbox" style="margin-top:3px;flex:0 0 auto;width:16px;height:16px;accent-color:var(--ember)"><div><span style="display:inline-block;font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;color:var(--ember);background:var(--ember-wash);padding:2px 7px;border-radius:var(--radius-xs);margin-right:6px;white-space:nowrap">Sun 18 Oct · 11pm SGT</span><strong>Sagano Torokko</strong> for D6 · 19 Nov — booking opens 00:00 JST 19 Oct. Take the <strong>09:02 Saga → Kameoka</strong>, right-side seats, to make the 10:00 boat.</div></li>
+        <li style="display:flex;gap:var(--space-3);align-items:flex-start"><input type="checkbox" style="margin-top:3px;flex:0 0 auto;width:16px;height:16px;accent-color:var(--ember)"><div><span style="display:inline-block;font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;color:var(--ember);background:var(--ember-wash);padding:2px 7px;border-radius:var(--radius-xs);margin-right:6px;white-space:nowrap">Mon 20 Oct</span><strong>Kyoto → Kanazawa</strong> reserved seats (Thunderbird + Hokuriku Shinkansen) for D7 · 20 Nov — opens one month out on JR-West <strong>e5489</strong>, 10:00 JST (9am SGT). Reserve both legs.</div></li>
+        <li style="display:flex;gap:var(--space-3);align-items:flex-start"><input type="checkbox" style="margin-top:3px;flex:0 0 auto;width:16px;height:16px;accent-color:var(--ember)"><div><span style="display:inline-block;font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;color:var(--ember);background:var(--ember-wash);padding:2px 7px;border-radius:var(--radius-xs);margin-right:6px;white-space:nowrap">~22 Oct</span><strong>Nohi bus — both legs</strong> for D9 · 22 Nov: Kanazawa → Shirakawa-gō and Shirakawa-gō → Takayama, on Japan Bus Online or nouhibus.co.jp. It’s the holiday Sunday, so book on opening.</div></li>
+        <li style="display:flex;gap:var(--space-3);align-items:flex-start"><input type="checkbox" style="margin-top:3px;flex:0 0 auto;width:16px;height:16px;accent-color:var(--ember)"><div><span style="display:inline-block;font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;color:var(--ember);background:var(--ember-wash);padding:2px 7px;border-radius:var(--radius-xs);margin-right:6px;white-space:nowrap">Fri 24 Oct</span><strong>JR Hida</strong> reserved seats, Takayama → Nagoya for D11 · 24 Nov — opens one month out (Navitime or a station Midori-no-madoguchi). Grab a window seat for the gorge.</div></li>
+        <li style="display:flex;gap:var(--space-3);align-items:flex-start"><input type="checkbox" style="margin-top:3px;flex:0 0 auto;width:16px;height:16px;accent-color:var(--ember)"><div><span style="display:inline-block;font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;color:var(--ember);background:var(--ember-wash);padding:2px 7px;border-radius:var(--radius-xs);margin-right:6px;white-space:nowrap">Few weeks out</span><strong>D14 finale &amp; airport</strong> — <strong>Nabana no Sato</strong> is walk-up (no booking). Prefer <strong>Ghibli Park</strong> on D14 instead? Its timed tickets release ~2 months ahead and sell out, so decide early. For D15, the Meitetsu <strong>μ-Sky</strong> to Centrair needs no reservation (optional ¥450 reserved seat).</div></li>
+        <li style="display:flex;gap:var(--space-3);align-items:flex-start"><input type="checkbox" style="margin-top:3px;flex:0 0 auto;width:16px;height:16px;accent-color:var(--ember)"><div><span style="display:inline-block;font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;color:var(--ember);background:var(--ember-wash);padding:2px 7px;border-radius:var(--radius-xs);margin-right:6px;white-space:nowrap">Few weeks out</span><strong>Restaurant tables</strong> where noted (Ajinoya on D1, Kitchen Hida in Takayama) and <strong>confirm 2026 light-up dates</strong>: Kōdai-ji (D4), Momiji Tunnel (D5), Kenroku-en (D8), Kōrankei (D12).</div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div style="display:flex;align-items:baseline;gap:var(--space-4);margin-bottom:var(--space-4)">
+      <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--amber-dark);letter-spacing:.08em">03</span>
+      <h2 style="font-size:var(--text-2xl);font-weight:600">The route, day by day</h2>
+    </div>
+    <p style="color:var(--text-secondary);max-width:64ch;margin-bottom:var(--space-10)">Read it like a rail line: each stop is a base city, days branch off it, and the links between are the train or bus. Ember stations are where the foliage should be at its best.</p>
+
+    <div>
+      <div style="position:relative;border-left:2px solid var(--border-default);padding:0 0 var(--space-10) var(--space-8)">
+        <div style="position:absolute;left:-9px;top:6px;width:16px;height:16px;border-radius:50%;background:var(--parchment);border:2px solid var(--border-strong)"></div>
+        <div style="display:flex;align-items:baseline;gap:var(--space-4);flex-wrap:wrap;margin-bottom:var(--space-4)">
+          <h3 style="font-family:var(--font-serif);font-size:var(--text-2xl);font-weight:400">Osaka</h3>
+          <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-secondary);background:var(--sand);padding:4px 10px;border-radius:var(--radius-sm)">Days 1–3 · base · Tenmabashi</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:var(--space-4)">
+
+          <article style="background:var(--surface-raised);border-radius:var(--radius-md);box-shadow:var(--shadow-sm);padding:var(--space-5) var(--space-6);display:flex;flex-direction:column;gap:var(--space-3)">
+            <div style="display:flex;align-items:baseline;gap:var(--space-3);flex-wrap:wrap">
+              <span style="font-family:var(--font-mono);font-size:var(--text-xs);font-weight:500;color:var(--parchment);background:var(--espresso);padding:3px 8px;border-radius:var(--radius-xs)">D1</span>
+              <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-tertiary)">Sat 14 Nov</span>
+              <h4 style="font-size:var(--text-md);font-weight:500;margin-left:auto">Arrive · Osaka Castle &amp; Pokémon</h4>
+            </div>
+            
+            <div style="font-family:var(--font-mono);font-size:var(--text-xs);line-height:1.8;color:var(--text-secondary);background:var(--parchment-soft);border-radius:var(--radius-sm);padding:var(--space-2) var(--space-3)">08:35 land KIX · 10:30 hotel, bags · 11:30 lunch · 12:30 Osaka Castle Park · 14:00 Namba Yasaka Shrine · 15:00 Den Den Town + DX · 17:30 Dōtonbori dinner</div>
+            
+            <p style="font-size:var(--text-sm);line-height:1.7;color:var(--text-secondary)">An easy, low-transit first day. Osaka is only an hour ahead of Singapore, so it's red-eye tiredness rather than real jet lag — drop bags and ease into the city from the castle down to Dōtonbori.</p>
+            <ol style="font-size:var(--text-sm);line-height:1.7;color:var(--text-secondary);padding-left:20px;display:flex;flex-direction:column;gap:var(--space-2)">
+              <li><strong>Land KIX · 08:35</strong> — grab an IC card and head in. Cheapest is the <strong>Nankai Airport Express</strong> to Namba (~¥930, no reservation), then the Osaka Metro to Tenmabashi (~¥240) — about <strong>~¥1,170</strong> all-in, ~1 h with a transfer. (The faster reserved <strong>Rapi:t</strong> is ~¥1,490, so with the subway ~¥1,730.) <strong>If time permits</strong>, the no-transfer alternative is the <strong>Airport Limousine Bus</strong> (KATE, stop 10): the <strong>10:10</strong> departure runs straight to <strong>Temmabashi Station</strong> — your hotel’s doorstep — arriving ~11:15, <strong>~¥1,800</strong> one-way (a little less prebooked). About ¥600 more than the Airport Express route — on par with the Rapi:t — but one seat, no stairs; just slightly slower, nudging lunch later.</li>
+              <li><strong>Hotel, drop bags · 10:30</strong> — check-in is later, so leave luggage at <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Hotel%20Keihan%20Temmabashi%20Ekimae&amp;destination_place_id=ChIJ0bBQ4HLnAGARE2oKTFbRLoc" target="_blank" rel="noopener">Hotel Keihan Temmabashi Ekimae</a> and head straight out.</li>
+              <li><strong>Lunch · 11:30</strong> — <strong>fried rice and noodles</strong> (焼飯と麺), a 1-min walk from Keihan Tenmabashi on the way to the castle: fragrant fried rice and clear chuka soba, cash-only ticket machine downstairs, seats upstairs. No reservations — go near the 11:00 open to beat the queue, and note it can sell out.</li>
+              <li><strong>Osaka Castle Park · 12:30</strong> — a short walk on: lawns, the 300-year-old giant ginkgo and the momiji, an easy first-day autumn view.</li>
+              <li><strong>Namba Yasaka Shrine · 14:00</strong> — subway south to Namba for the dramatic giant lion-head stage (Ema-den), a quick, photogenic stop ~5 min from the station — then work north through Minami.</li>
+              <li><strong>Den Den Town + DX Pokémon · 15:00</strong> — <strong>Nipponbashi</strong>’s electronics & anime strip, then north to the <strong>DX Pokémon Center</strong> and Pokémon Café at Daimaru Shinsaibashi (9F, open to 20:00).</li>
+              <li><strong>Dōtonbori dinner · 17:30</strong> — the Glico sign, Ebisubashi and the canal for a first street-food dinner, then the short hop north to the hotel. Low on energy? Keep it to the castle park and an early dinner near the hotel.</li>
+            </ol>
+            <div style="display:flex;gap:var(--space-4);font-size:var(--text-sm);line-height:1.6;color:var(--text-secondary);border-top:1px solid var(--border-subtle);padding-top:var(--space-3)">
+              <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-tertiary);flex:0 0 74px;padding-top:4px">Autumn</span>
+              <div>Mid-Nov is early for central-Osaka kōyō (the city peaks late Nov, later still in 2026), so today is the season just starting — the <strong>Osaka Castle</strong> ginkgo and Nakanoshima roses turning, the Midōsuji ginkgo going gold. Your real foliage begins at <strong>Minoh</strong> tomorrow.</div>
+            </div>
+            <div style="display:flex;gap:var(--space-4);font-size:var(--text-sm);line-height:1.6;color:var(--text-secondary);border-top:1px solid var(--border-subtle);padding-top:var(--space-3)">
+              <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-tertiary);flex:0 0 74px;padding-top:4px">Pokémon</span>
+              <div><strong>Pokémon Center Osaka DX</strong> — Daimaru Shinsaibashi 9F, a short walk from Dōtonbori. The <strong>Pokémon Café</strong> is next door (reservation-only — book the moment slots open). Doing DX now keeps the flagship <strong>Umeda</strong> store as the D14 highlight.</div>
+            </div>
+            <div style="display:flex;gap:var(--space-4);font-size:var(--text-sm);line-height:1.6;color:var(--text-secondary);border-top:1px solid var(--border-subtle);padding-top:var(--space-3)">
+              <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ember);flex:0 0 74px;padding-top:4px">Eat</span>
+              <div>Lunch is <strong>fried rice and noodles</strong> (焼飯と麺) by Tenmabashi — walk-in only, English/Chinese/Korean menus, roughly ¥1,000–1,500 for a ramen-and-fried-rice set. Dinner in Dōtonbori: <strong>Namba Okonomiyaki Ajinoya Honten</strong> (reserve or queue) plus takoyaki from the stalls; <strong>551 Horai</strong> pork buns, or mochi-pounding at <strong>Oh Mochi</strong>.</div>
+            </div>
+          </article>
+
+          <article style="background:var(--surface-raised);border-radius:var(--radius-md);box-shadow:var(--shadow-sm);padding:var(--space-5) var(--space-6);display:flex;flex-direction:column;gap:var(--space-3)">
+            <div style="display:flex;align-items:baseline;gap:var(--space-3);flex-wrap:wrap">
+              <span style="font-family:var(--font-mono);font-size:var(--text-xs);font-weight:500;color:var(--parchment);background:var(--espresso);padding:3px 8px;border-radius:var(--radius-xs)">D2</span>
+              <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-tertiary)">Sun 15 Nov</span>
+              <h4 style="font-size:var(--text-md);font-weight:500;margin-left:auto">Katsuō-ji &amp; Minoh Falls</h4>
+            </div>
+            
+            <div style="font-family:var(--font-mono);font-size:var(--text-xs);line-height:1.8;color:var(--text-secondary);background:var(--parchment-soft);border-radius:var(--radius-sm);padding:var(--space-2) var(--space-3)">09:00 depart · 10:00 Katsuō-ji · 12:30 Minoh Falls · 14:30 Umeda lunch + Pokémon · 16:00 Keitakuen · 18:00 Shinsekai dinner</div>
+            
+            <p style="font-size:var(--text-sm);line-height:1.7;color:var(--text-secondary)">A fuller foliage day in the Minoh hills, best done top-down — mountain temple first, then walk down to the falls.</p>
+            <ol style="font-size:var(--text-sm);line-height:1.7;color:var(--text-secondary);padding-left:20px;display:flex;flex-direction:column;gap:var(--space-2)">
+              <li><strong>Depart · 09:00</strong> — Midōsuji Line to its terminus Minoh-Kayano, then <strong>Hankyu Bus #30</strong> to Katsuō-ji (~20 min · ¥800).</li>
+              <li><strong>Katsuō-ji · 10:00</strong> — the 1,300-year-old mountain daruma temple, terraces strewn with thousands of little red dolls and wrapped in maples around a red-bridged pond; colours a touch earlier up here.</li>
+              <li><strong>Walk down · 11:30</strong> — the forest trail toward the falls (~40 min, mostly downhill), or a taxi to skip the hilly middle. Last bus back from the temple is ~15:00, which is exactly why you walk.</li>
+              <li><strong>Minoh Falls · 12:30</strong> — the 33 m falls, then the paved 2.7 km <strong>Taki-michi</strong> past momiji-tempura stalls to Hankyu Minoo Station.</li>
+              <li><strong>Back to Umeda · 14:00</strong> — the Hankyu from Minoo terminates right at <strong>Osaka-Umeda</strong> (~25 min), steps from the Pokémon Center.</li>
+              <li><strong>Umeda · lunch + Pokémon · 14:30</strong> — lunch in the LUCUA 1100 / Daimaru food halls, then <strong>Pokémon Center Osaka</strong> on Daimaru Umeda’s 13F (open to 20:00), with <strong>Nintendo Osaka</strong> on the same floor.</li>
+              <li><strong>Keitakuen · 16:00</strong> — Midōsuji south to Tennoji for the quiet pond-and-maple garden in Tennoji Park (open to 17:00), on the way to dinner.</li>
+              <li><strong>Shinsekai · 18:00</strong> — Tsūtenkaku and a retro-Osaka dinner next door. Too tired? Café-hop the machiya cafés of Nakazakichō, or the riverside terraces around Kitahama near your hotel.</li>
+            </ol>
+            <div style="display:flex;gap:var(--space-4);font-size:var(--text-sm);line-height:1.6;color:var(--text-secondary);border-top:1px solid var(--border-subtle);padding-top:var(--space-3)">
+              <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-tertiary);flex:0 0 74px;padding-top:4px">Transit</span>
+              <div>Midōsuji Line to its terminus <strong>Minoh-Kayano</strong> (Tanimachi to Umeda first), then <strong>Hankyu Bus #30 from stand 8</strong> to <strong>Katsuō-ji</strong> (20 min · ¥800 · every 20–30 min on a Sunday). Go early: the last bus back from the temple leaves around 3 pm, which is exactly why you walk down to the falls instead. Exit via the Taki-michi to <strong>Hankyu Minoo Station</strong>. Temple ¥500; the falls trail occasionally closes after storms, so check status.</div>
+            </div>
+            <div style="display:flex;gap:var(--space-4);font-size:var(--text-sm);line-height:1.6;color:var(--text-secondary);border-top:1px solid var(--border-subtle);padding-top:var(--space-3)">
+              <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ember);flex:0 0 74px;padding-top:4px">Eat</span>
+              <div>On the Minoh path: <strong>momiji tempura</strong> — candied deep-fried maple leaves — from <strong>Koyo-ryorikan</strong> or <strong>Momotaro</strong>. Lunch up at Umeda — the <strong>LUCUA 1100</strong> and Daimaru “Umekita” food floors, or Hankyu Sanbangai’s restaurant warren under the station. Dinner: <strong>Kushikatsu Daruma</strong>, the original skewer joint in Shinsekai. Sweet stop: <strong>Torori</strong> warabi mochi and a matcha latte in Tenjinbashi.</div>
+            </div>
+          </article>
+
+          <article style="background:var(--surface-raised);border-radius:var(--radius-md);box-shadow:var(--shadow-sm);padding:var(--space-5) var(--space-6);display:flex;flex-direction:column;gap:var(--space-3)">
+            <div style="display:flex;align-items:baseline;gap:var(--space-3);flex-wrap:wrap">
+              <span style="font-family:var(--font-mono);font-size:var(--text-xs);font-weight:500;color:var(--parchment);background:var(--espresso);padding:3px 8px;border-radius:var(--radius-xs)">D3</span>
+              <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-tertiary)">Mon 16 Nov</span>
+              <h4 style="font-size:var(--text-md);font-weight:500;margin-left:auto">Amanohashidate, Ine &amp; Miyama · Kyoto by the Sea</h4>
+            </div>
+            
+            <div style="font-family:var(--font-mono);font-size:var(--text-xs);line-height:1.8;color:var(--text-secondary);background:var(--parchment-soft);border-radius:var(--radius-sm);padding:var(--space-2) var(--space-3)">07:05 meet Nihonbashi · 09:50 Ine boathouses · 11:30 Amanohashidate + cable car · 15:00 Miyama village · ~17:40 Kitahama riverside</div>
+            
+            <p style="font-size:var(--text-sm);line-height:1.7;color:var(--text-secondary)">A booked full-day coach up to the Sea of Japan coast — <strong>“Kyoto by the Sea”</strong> — pairing one of Japan’s Three Views with two storybook villages. A long day (~10 hrs) and a change of pace from the temples, but it bundles the awkward transfers that make this corner impossible to do well by public transport. It disbands in Shinsaibashi, so your evening sorts itself.</p>
+            <ol style="font-size:var(--text-sm);line-height:1.7;color:var(--text-secondary);padding-left:20px;display:flex;flex-direction:column;gap:var(--space-2)">
+              <li><strong>Meet at Nihonbashi · 07:05</strong> — Exit 2 (look for the yellow “GOGODAY” flag); 7:20 departure. ~15 min by subway from Tenmabashi, so an early start — leave the hotel ~6:40 and be punctual, shared tours don’t wait.</li>
+              <li><strong>Ine no Funaya · 09:50</strong> — the “Venice of Japan,” ~230 wooden boathouses built out over the bay; a boat cruise loops the harbour, seagulls swooping in for the crackers you’re handed.</li>
+              <li><strong>Amanohashidate · 11:30</strong> — one of Japan’s Three Views, a 3.6 km pine sandbar; ride the cable car up to Viewland for the “Flying Dragon” panorama (the tradition is to view it upside-down between your legs). ~2 hrs, lunch at your own expense.</li>
+              <li><strong>Miyama thatched village · 15:00</strong> — the <strong>kayabuki-no-sato</strong>: a cluster of Edo-era thatched-roof farmhouses in a quiet valley, like stepping into an old woodblock print (~40 min).</li>
+              <li><strong>Kitahama &amp; Nakanoshima · from ~17:40</strong> — from the Shinsaibashi drop-off, head north to the Ōkawa riverside (a change from D1’s Minami): the leafy island, the <strong>Central Public Hall</strong> lit up, and a riverside dinner on the <strong>Kitahama</strong> terraces — a short walk from your hotel to wind down after the long day.</li>
+            </ol>
+            <div style="display:flex;gap:var(--space-4);font-size:var(--text-sm);line-height:1.6;color:var(--text-secondary);border-top:1px solid var(--border-subtle);padding-top:var(--space-3)">
+              <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-tertiary);flex:0 0 74px;padding-top:4px">Transit</span>
+              <div>Booked coach tour (<a href="https://www.pelago.com/en-SG/activity/pguczrg23-guaranteed-departure-for-solo-traveler-kyoto-amanohashidate-miyama-day-tour-from-osaka-namba-ine-funaya-amanohashidate-miyama-thatched-village-japan-kyoto/" target="_blank" rel="noopener">Pelago</a>), English/Chinese/Japanese guide, ~10 hrs. Meets <strong>Nihonbashi Exit 2 · 07:05</strong> (7:20 departure) and disbands at <strong>Shinsaibashi ~17:40</strong>. Pick the package with the <strong>cable car + Ine boat</strong> included. One free bag per person (extra suitcase ¥2,000).</div>
+            </div>
+            <div style="display:flex;gap:var(--space-4);font-size:var(--text-sm);line-height:1.6;color:var(--text-secondary);border-top:1px solid var(--border-subtle);padding-top:var(--space-3)">
+              <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-tertiary);flex:0 0 74px;padding-top:4px">Notes</span>
+              <div>One of the rare Kansai trips where a tour beats DIY — Ine has no railway and buses run only about hourly, so doing it yourself is long, costly and fragile. Sea-of-Japan weather is changeable in late Nov; the operator cancels for typhoon/snow (notified by 6 pm the day before), and the fare is <strong>non-refundable close in</strong>. It’s an early 7:05 start, so an easy night beforehand helps.</div>
+            </div>
+            <div style="display:flex;gap:var(--space-4);font-size:var(--text-sm);line-height:1.6;color:var(--text-secondary);border-top:1px solid var(--border-subtle);padding-top:var(--space-3)">
+              <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ember);flex:0 0 74px;padding-top:4px">Eat</span>
+              <div>Lunch is at your own expense — seafood around Amanohashidate and Chion-ji, and Ine’s bayside cafés and seafood. Dinner on the <strong>Kitahama</strong> riverside terraces (Ōkawa views, near the hotel) to wind down — or grab it at the Shinsaibashi drop-off if you’d rather not move.</div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <div style="position:relative;border-left:2px solid var(--border-default);padding:0 0 var(--space-10) var(--space-8)">
+        <div style="position:absolute;left:-5px;top:6px;width:8px;height:8px;border-radius:50%;background:var(--border-strong)"></div>
+        <div style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-tertiary);letter-spacing:.04em">Osaka → Kyoto · Keihan ~50 min · D4</div>
+      </div>
+
+      <div style="position:relative;border-left:2px solid var(--border-default);padding:0 0 var(--space-10) var(--space-8)">
+        <div style="position:absolute;left:-9px;top:6px;width:16px;height:16px;border-radius:50%;background:var(--ember-wash);border:2px solid var(--ember)"></div>
+        <div style="display:flex;align-items:baseline;gap:var(--space-4);flex-wrap:wrap;margin-bottom:var(--space-4)">
+          <h3 style="font-family:var(--font-serif);font-size:var(--text-2xl);font-weight:400">Kyoto</h3>
+          <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--ember);background:var(--ember-wash);padding:4px 10px;border-radius:var(--radius-sm)">Days 4–6 · foliage peak</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:var(--space-4)">
+
+          <article style="background:var(--surface-raised);border-radius:var(--radius-md);box-shadow:var(--shadow-sm);padding:var(--space-5) var(--space-6);display:flex;flex-direction:column;gap:var(--space-3)">
+            <div style="display:flex;align-items:baseline;gap:var(--space-3);flex-wrap:wrap">
+              <span style="font-family:var(--font-mono);font-size:var(--text-xs);font-weight:500;color:var(--parchment);background:var(--espresso);padding:3px 8px;border-radius:var(--radius-xs)">D4</span>
+              <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-tertiary)">Tue 17 Nov</span>
+              <h4 style="font-size:var(--text-md);font-weight:500;margin-left:auto">Kyoto &amp; Uji · aqueduct walk</h4>
+            </div>
+            
+            <div style="font-family:var(--font-mono);font-size:var(--text-xs);line-height:1.8;color:var(--text-secondary);background:var(--parchment-soft);border-radius:var(--radius-sm);padding:var(--space-2) var(--space-3)">08:00 check out · 09:00 hotel, drop bags · 09:45 Uji + matcha ramen · 14:00 Nanzen-ji + Eikan-dō · 16:30 Dragon Burger dinner · 17:30 Kōdai-ji light-up · 19:00 Gion → Pontochō stroll</div>
+            
+            <p style="font-size:var(--text-sm);line-height:1.7;color:var(--text-secondary)">Bags down first, then Uji. Check out around 8:00, ride into <strong>Kyoto Station</strong> (~45 min) and drop your bags at the hotel two minutes from the Hachijo exit — no lockers to chase. Then hop the <strong>JR Nara line</strong> south to <strong>Uji</strong> (~20 min), reaching the matcha town by ~9:45. <strong>Byōdō-in</strong>’s Phoenix Hall sits mirrored in its pond with maples around the rim, and the <strong>Omotesandō</strong> approach is lined with centuries-old tea houses. Back on the JR line by early afternoon and up to Higashiyama, pausing at <strong>Murin-an</strong>, a Meiji-era garden of maples and streams with the mountains borrowed as backdrop (reserve online; peak-autumn ~¥1,500), before the afternoon walk — Nanzen-ji and the maples of Eikan-dō by day, then Kōdai-ji’s evening light-up (Eikan-dō’s own illumination doesn’t begin until Nov 20).</p>
+            <ol style="font-size:var(--text-sm);line-height:1.7;color:var(--text-secondary);padding-left:20px;display:flex;flex-direction:column;gap:var(--space-2)">
+              <li><strong>Kyoto Station · 09:00</strong> — drop your bags at the hotel, two minutes from the Hachijo East exit, then straight back to the platform. No lockers to chase.</li>
+              <li><strong>Uji · 09:45</strong> — <strong>JR Nara line</strong> down (~20 min): <strong>Byōdō-in</strong> (Phoenix Hall mirrored in its pond, maples round the rim; ¥700 grounds), then <strong>lunch on the Omotesandō</strong> — go for the gimmick, <strong>matcha ramen</strong> (green-tea noodles + matcha gyoza) at <strong>Tanakakusho</strong>, or classic <strong>cha-soba</strong> (matcha soba) at <strong>Torikiku</strong>; chase it with a matcha soft-serve, and ten minutes at the Uji Bridge.</li>
+              <li><strong>Keage · 14:00</strong> — JR back up to Kyoto and the subway <strong>Tōzai Line to Keage</strong>; the old railway slope (<strong>Murin-an</strong> garden is 7 min away if you want it first).</li>
+              <li><strong>Nanzen-ji</strong> — free grounds and the red-brick <strong>Suirokaku aqueduct</strong> in daylight; paid halls close ~16:30.</li>
+              <li><strong>Eikan-dō · by day</strong> — right next door, “Eikan-dō of the maples”: about 3,000 of them around Hōjō Pond. The night light-up doesn’t start until Nov 20, but the daytime visit is open (in by ~16:30, gates 17:00, ¥1,000). Philosopher’s Path begins just past here for a short stretch.</li>
+              <li><strong>Dragon Burger 南禅寺店 · dinner ~16:30</strong> — right after Eikan-dō, a short walk to Keage for juicy wagyu burgers (yuzu, shiso, wasabi; ~¥1,800), 4.7-rated — an early dinner also beats the queue. (Closed Weds — fine, you’re here Tuesday.)</li>
+              <li><strong>Kōdai-ji light-up · from 17:30</strong> — bus south (~15–20 min) to Higashiyama’s Kōdai-ji for the finale: projection-mapping illumination and the pond mirroring the maples (open from Nov 15, to ~22:00).</li>
+              <li><strong>Gion → Pontochō stroll · ~19:00</strong> — walk it off: down past <strong>Yasaka Shrine</strong>, along Gion’s <strong>Hanamikoji</strong> and the <strong>Shirakawa</strong> canal, across Shijō to <strong>Pontochō</strong>’s lantern-lit riverside alley for a nightcap or dessert (you’ve already eaten). ~25–30 min; stick to the main lanes — Gion’s small private alleys are off-limits to tourists. Then Keihan/subway back to the hotel.</li>
+            </ol>
+            <div style="display:flex;gap:var(--space-4);font-size:var(--text-sm);line-height:1.6;color:var(--text-secondary);border-top:1px solid var(--border-subtle);padding-top:var(--space-3)">
+              <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-tertiary);flex:0 0 74px;padding-top:4px">Transit</span>
+              <div>Check out ~8:00. Into <strong>Kyoto Station</strong> ~45 min (Keihan to Tofukuji, one stop on the JR Nara line; or JR from Osaka Station) — drop bags at the hotel, no lockers needed. Then <strong>JR Nara line</strong> down to <strong>JR Uji</strong> (~20 min) and back. For the afternoon, JR to Kyoto and subway <strong>Tōzai Line to Keage</strong>. Begin the walk by 2 pm so Nanzen-ji, the aqueduct and Eikan-dō’s maples catch daylight (Eikan-dō gates close 17:00); then a short bus south to Kōdai-ji for the 17:00 light-up. Confirm dates on the temples’ sites.</div>
+            </div>
+            <div style="display:flex;gap:var(--space-4);font-size:var(--text-sm);line-height:1.6;color:var(--text-secondary);border-top:1px solid var(--border-subtle);padding-top:var(--space-3)">
+              <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ember);flex:0 0 74px;padding-top:4px">Eat</span>
+              <div>Uji is matcha central — a <strong>matcha ramen</strong> lunch (green-tea noodles + matcha gyoza) at <strong>Tanakakusho</strong>, or classic <strong>cha-soba</strong> at <strong>Torikiku</strong>, plus a matcha soft-serve or parfait (Nakamura Tōkichi / Itoh Kyuemon) along the Omotesandō. An early dinner (~16:30) at <strong>Dragon Burger 南禅寺店</strong> by Nanzen-ji — wagyu burgers with yuzu/shiso/wasabi (~¥1,800) — before the Kōdai-ji light-up finale. (Still fancy Pontochō? It’s central and open late if you’d rather a later dinner.)</div>
+            </div>
+          </article>
+
+          <article style="background:var(--surface-raised);border-radius:var(--radius-md);box-shadow:var(--shadow-sm);padding:var(--space-5) var(--space-6);display:flex;flex-direction:column;gap:var(--space-3)">
+            <div style="display:flex;align-items:baseline;gap:var(--space-3);flex-wrap:wrap">
+              <span style="font-family:var(--font-mono);font-size:var(--text-xs);font-weight:500;color:var(--parchment);background:var(--espresso);padding:3px 8px;border-radius:var(--radius-xs)">D5</span>
+              <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-tertiary)">Wed 18 Nov</span>
+              <h4 style="font-size:var(--text-md);font-weight:500;margin-left:auto">Fushimi Inari, Kibune &amp; Kurama</h4>
+            </div>
+            
+            <div style="font-family:var(--font-mono);font-size:var(--text-xs);line-height:1.8;color:var(--text-secondary);background:var(--parchment-soft);border-radius:var(--radius-sm);padding:var(--space-2) var(--space-3)">08:00 breakfast · 09:00 Fushimi Inari · 11:30 Enkō-ji + Ichijōji ramen · 13:30 Kurama-dera · 14:45 hike to Kibune · after dark, lit tunnel home</div>
+            
+            <p style="font-size:var(--text-sm);line-height:1.7;color:var(--text-secondary)">Flipped to chase the light-up. Start at <strong>Fushimi Inari</strong> early — two JR stops from the hotel and magical before the crowds — then ride north into the mountains, hike <strong>Kibune → Kurama</strong>, soak at <strong>Kurama Onsen</strong> while the light fades, and ride the Eizan <strong>Kirara</strong> home through the illuminated <strong>Momiji Tunnel</strong> after dark. Reversing the day means you keep the onsen <em>and</em> the lit tunnel.</p>
+            <ol style="font-size:var(--text-sm);line-height:1.7;color:var(--text-secondary);padding-left:20px;display:flex;flex-direction:column;gap:var(--space-2)">
+              <li><strong>Fushimi Inari · from ~09:00</strong> — breakfast, then leave ~8:30; two JR stops to Inari. Climb the torii tunnels (the <strong>Yotsutsuji</strong> viewpoint ~30 min up is enough). Go on the early side today — it’s a full day.</li>
+              <li><strong>Enkō-ji · ~11:30</strong> — Keihan to <strong>Demachiyanagi</strong>, Eizan to <strong>Ichijōji</strong>: the reserved autumn viewing at <strong>Enkō-ji</strong>, a hillside maple garden with a famous bird’s-eye view over the grounds (~1 h). Book the timed slot — autumn reservations open <strong>Oct 15</strong> at enkouji.jp (~¥1,500, last entry 16:30). Shisen-dō is a 2-min walk if you have time.</li>
+              <li><strong>Ichijōji ramen lunch · ~12:45</strong> — Ichijōji is Kyoto’s ramen district, so grab a bowl before heading up.</li>
+              <li><strong>Up to Kurama · ~13:30</strong> — back on the Eizan to the Kurama terminus (through the Momiji Tunnel in daylight on the way up).</li>
+              <li><strong>Kurama-dera · 14:00</strong> — ride the little <strong>cable car (¥200) up</strong> to skip the first climb, then the mountainside main hall and valley views; the trail starts behind it.</li>
+              <li><strong>Over the ridge, down to Kibune · from ~14:45</strong> — a short climb to the ridge (towering cedars and the <strong>Tree-Root Path</strong>), then a long, easy descent into <strong>Kibune</strong> and <strong>Kifune Shrine</strong>. Running behind? Skip the hike and train between Kurama and Kibuneguchi — you’ll still make the tunnel.</li>
+              <li><strong>Momiji Tunnel light-up · after dark</strong> — down to Kibuneguchi, then ride the Kirara home through the lit tunnel: lit ~16:50 to about 21:00, cabin lights off, the train slowed. It runs late, so no rush — ride once it’s properly dark. Walk-on local train, busy at peak; grab window seats.</li>
+            </ol>
+            <div style="display:flex;gap:var(--space-4);font-size:var(--text-sm);line-height:1.6;color:var(--text-secondary);border-top:1px solid var(--border-subtle);padding-top:var(--space-3)">
+              <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-tertiary);flex:0 0 74px;padding-top:4px">Notes</span>
+              <div>Access via Demachiyanagi (Keihan → Eizan). With Enkō-ji you now make three Eizan hops (~¥1,050), so the <strong>¥1,200 one-day pass</strong> is about break-even — worth it here for the freedom to hop on and off. Cable car ¥200 · Kurama-dera ¥500. Higher than the city, so mid-Nov should be near peak. The <strong>Momiji Tunnel light-up</strong> runs dusk–~21:00 in the autumn window — recent years ran early/mid-Nov through ~Nov 24, so the 18th is very likely covered, but confirm the 2026 dates at eizandensha.co.jp (posted from September). Keeping it gentle? Skip the ridge hike and take the train between Kibuneguchi and Kurama. Roots get slippery after rain; last bus down from Kibune ~6 pm. Want the onsen after all? <strong>Kurama Onsen</strong> (~¥2,000) is by Kurama station, at the start of the day.</div>
+            </div>
+            <div style="display:flex;gap:var(--space-4);font-size:var(--text-sm);line-height:1.6;color:var(--text-secondary);border-top:1px solid var(--border-subtle);padding-top:var(--space-3)">
+              <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ember);flex:0 0 74px;padding-top:4px">Eat</span>
+              <div>At Inari, <strong>Nezameya</strong> by the station for kitsune udon and inari-zushi once it opens. Up the mountain, <strong>botan-nabe</strong> (wild-boar hotpot) is the Kurama–Kibune specialty; <strong>Yoshuji</strong> near Kurama Station does mountain-vegetable and sanshō dishes; Kibune’s riverside inns serve kaiseki lunches.</div>
+            </div>
+          </article>
+
+          <article style="background:var(--surface-raised);border-radius:var(--radius-md);box-shadow:var(--shadow-sm);padding:var(--space-5) var(--space-6);display:flex;flex-direction:column;gap:var(--space-3)">
+            <div style="display:flex;align-items:baseline;gap:var(--space-3);flex-wrap:wrap">
+              <span style="font-family:var(--font-mono);font-size:var(--text-xs);font-weight:500;color:var(--parchment);background:var(--espresso);padding:3px 8px;border-radius:var(--radius-xs)">D6</span>
+              <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-tertiary)">Thu 19 Nov</span>
+              <h4 style="font-size:var(--text-md);font-weight:500;margin-left:auto">Arashiyama, gorge &amp; Takao</h4>
+            </div>
+            
+            <div style="font-family:var(--font-mono);font-size:var(--text-xs);line-height:1.8;color:var(--text-secondary);background:var(--parchment-soft);border-radius:var(--radius-sm);padding:var(--space-2) var(--space-3)">08:45 Torokko Saga · 09:02 gorge train · 10:00 Hozugawa boat · 12:00 Arashiyama lunch · 14:00 Takao: Jingo-ji → Saimyō-ji → Kōzan-ji · 18:00 Pokémon Center + dinner</div>
+            
+            <p style="font-size:var(--text-sm);line-height:1.7;color:var(--text-secondary)">The scenic heart of the Kyoto days — down a river gorge by rail, then by boat, capped with the trip's best-timed foliage valley. Skipping the bamboo grove, it runs point to point.</p>
+            <ol style="font-size:var(--text-sm);line-height:1.7;color:var(--text-secondary);padding-left:20px;display:flex;flex-direction:column;gap:var(--space-2)">
+              <li><strong>Gion → Torokko Saga</strong> — JR Sagano Line via Kyoto Station to Saga-Arashiyama (~40 min); Torokko Saga is beside it. Arrive by 8:45.</li>
+              <li><strong>Sagano Torokko · 09:02</strong> — the open-air scenic train up the <strong>Hozugawa gorge</strong> to Torokko Kameoka (~25 min). Book a month ahead; Thursday is a guaranteed running day.</li>
+              <li><strong>Shuttle to the pier</strong> — timed bus from Torokko Kameoka to the boat dock (~15 min, ¥350–500).</li>
+              <li><strong>Hozugawa river boat · 10:00</strong> — float back down the ravine to Arashiyama (~2 h), landing at Togetsukyō around noon. No reservation needed.</li>
+              <li><strong>Lunch in Arashiyama</strong> — by the bridge; slot in a quick <strong>Tenryū-ji</strong> garden loop if you want more maples.</li>
+              <li><strong>Arashiyama → Takao</strong> — Randen tram to Uzumasa-Tenjingawa, then City Bus #8 (~40 min); in peak season a seasonal Kyoto Bus #90 runs direct. Be ready to stand.</li>
+              <li><strong>Takao · 14:00 — Jingo-ji first</strong>, then up the valley. From the Takao stop, climb the ~400 maple-lined steps to <strong>Jingo-ji</strong> (the <em>kawarake</em> disc-throwing lookout over the Kiyotaki gorge) — it <strong>closes at 16:00</strong> and is the steepest, so do it first while fresh. Then walk north to <strong>Saimyō-ji</strong> (the red Shigetsu bridge) and World-Heritage <strong>Kōzan-ji</strong> (the “first manga” scrolls), both open to 17:00. Bus back from <strong>Toganoo</strong>. 2.5–3 h, brisk.</li>
+              <li><strong>Back downtown · dinner</strong> — bus/train to <strong>Shijō</strong>; the <strong>Pokémon Center Kyoto</strong> (SUINA Muromachi, Shijō-Karasuma) is right by Nishiki — pop in first since it closes 20:00, then dinner around Nishiki or Pontochō. (Alternatively, Jingo-ji runs a special evening opening some years, ~Nov 5–19 ~17:00–19:00 — if it’s on for the 19th, skip the Pokémon run and stay out at Takao: Saimyō-ji and Kōzan-ji first, then Jingo-ji after dark.)</li>
+            </ol>
+            <div style="display:flex;gap:var(--space-4);font-size:var(--text-sm);line-height:1.6;color:var(--text-secondary);border-top:1px solid var(--border-subtle);padding-top:var(--space-3)">
+              <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-tertiary);flex:0 0 74px;padding-top:4px">Pokémon</span>
+              <div><strong>Kyoto Pokémon Center</strong> — SUINA Muromachi 2F, Shijo, open to ~20:00. Takao fills this day, so swing by after dinner if you have energy — or catch it on the D4 or D5 evening, since it is central.</div>
+            </div>
+            <div style="display:flex;gap:var(--space-4);font-size:var(--text-sm);line-height:1.6;color:var(--text-secondary);border-top:1px solid var(--border-subtle);padding-top:var(--space-3)">
+              <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ember);flex:0 0 74px;padding-top:4px">Eat</span>
+              <div>Coffee on tatami at <strong>Söt Coffee</strong> near Gion with their basque cheesecake; snacks along the Arashiyama approach. Dinner downtown around <strong>Pontochō</strong> or <strong>Nishiki Market</strong>.</div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <div style="position:relative;border-left:2px solid var(--border-default);padding:0 0 var(--space-10) var(--space-8)">
+        <div style="position:absolute;left:-5px;top:6px;width:8px;height:8px;border-radius:50%;background:var(--border-strong)"></div>
+        <div style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-tertiary);letter-spacing:.04em">Thunderbird → Tsuruga, transfer Hokuriku Shinkansen → Kanazawa · ~2 h</div>
+      </div>
+
+      <div style="position:relative;border-left:2px solid var(--border-default);padding:0 0 var(--space-10) var(--space-8)">
+        <div style="position:absolute;left:-9px;top:6px;width:16px;height:16px;border-radius:50%;background:var(--ember-wash);border:2px solid var(--ember)"></div>
+        <div style="display:flex;align-items:baseline;gap:var(--space-4);flex-wrap:wrap;margin-bottom:var(--space-4)">
+          <h3 style="font-family:var(--font-serif);font-size:var(--text-2xl);font-weight:400">Kanazawa</h3>
+          <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--ember);background:var(--ember-wash);padding:4px 10px;border-radius:var(--radius-sm)">Days 7–8 · foliage peak</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:var(--space-4)">
+
+          <article style="background:var(--surface-raised);border-radius:var(--radius-md);box-shadow:var(--shadow-sm);padding:var(--space-5) var(--space-6);display:flex;flex-direction:column;gap:var(--space-3)">
+            <div style="display:flex;align-items:baseline;gap:var(--space-3);flex-wrap:wrap">
+              <span style="font-family:var(--font-mono);font-size:var(--text-xs);font-weight:500;color:var(--parchment);background:var(--espresso);padding:3px 8px;border-radius:var(--radius-xs)">D7</span>
+              <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-tertiary)">Fri 20 Nov</span>
+              <h4 style="font-size:var(--text-md);font-weight:500;margin-left:auto">Garden city</h4>
+            </div>
+            
+            <div style="font-family:var(--font-mono);font-size:var(--text-xs);line-height:1.8;color:var(--text-secondary);background:var(--parchment-soft);border-radius:var(--radius-sm);padding:var(--space-2) var(--space-3)">08:30 check out · 09:00 Thunderbird · 11:00 Kanazawa · 11:30 Ōmichō lunch · 13:00 Kenroku-en + castle · 16:00 Higashi Chaya · 17:30 Pokémon Center · 18:30 dinner</div>
+            
+            <p style="font-size:var(--text-sm);line-height:1.7;color:var(--text-secondary)">Check out of Kyoto and move to Kanazawa (~2 h with one transfer), then a compact loop of the garden city. The headline sights sit close together, so Kenroku-en and the castle are really a half-day, which leaves the late afternoon for the teahouse streets.</p>
+            <ol style="font-size:var(--text-sm);line-height:1.7;color:var(--text-secondary);padding-left:20px;display:flex;flex-direction:column;gap:var(--space-2)">
+              <li><strong>Kyoto → Kanazawa · depart 08:30</strong> — the hotel is a 2-min walk from Kyoto Station, so no cross-city hop with luggage. <strong>Thunderbird to Tsuruga</strong> (~45 min), then a cross-platform transfer to the <strong>Hokuriku Shinkansen</strong> (~40 min). A 09:00 departure lands you at 11:00. Reserve both legs; keep bags light for the change.</li>
+              <li><strong>Drop bags · 11:00</strong> — hotel near Kanazawa Station, or the station lockers.</li>
+              <li><strong>Ōmichō Market · lunch 11:30</strong> — Kanazawa’s kitchen: kaisen-don, crab, sushi.</li>
+              <li><strong>Kenroku-en · 13:00</strong> — one of Japan’s three great gardens at its autumn best, the yukitsuri rope cones just going up. 1.5–2 h.</li>
+              <li><strong>Kanazawa Castle Park</strong> — across the bridge from the garden; turrets, gates, grounds. ~1 h.</li>
+              <li><strong>Nagamachi</strong> — the earthen-walled samurai lanes, optional if time is tight.</li>
+              <li><strong>Higashi Chaya · 16:00</strong> — the teahouse quarter for late-afternoon lantern light and gold-leaf ice cream; ~1–1.5 h is plenty, then bus back toward the station.</li>
+              <li><strong>Pokémon Center Kanazawa · 17:30</strong> — <strong>Kanazawa Forus 5F</strong>, a minute from the station and your hotel’s East exit (open to 20:00); dinner from ~18:30.</li>
+            </ol>
+            <div style="display:flex;gap:var(--space-4);font-size:var(--text-sm);line-height:1.6;color:var(--text-secondary);border-top:1px solid var(--border-subtle);padding-top:var(--space-3)">
+              <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ember);flex:0 0 74px;padding-top:4px">Eat</span>
+              <div>Kaisendon at <strong>Omicho Ichiba Sushi</strong> in the market. Afternoon: <strong>Cafe Colere</strong>, a book-lined café in Higashi Chaya, then <strong>Hakuichi</strong> for the gold-leaf soft serve. Dinner by the station — Forus’s 6F “Kuugo” food floor (~20 restaurants) or a Katamachi izakaya.</div>
+            </div>
+          </article>
+
+          <article style="background:var(--surface-raised);border-radius:var(--radius-md);box-shadow:var(--shadow-sm);padding:var(--space-5) var(--space-6);display:flex;flex-direction:column;gap:var(--space-3)">
+            <div style="display:flex;align-items:baseline;gap:var(--space-3);flex-wrap:wrap">
+              <span style="font-family:var(--font-mono);font-size:var(--text-xs);font-weight:500;color:var(--parchment);background:var(--espresso);padding:3px 8px;border-radius:var(--radius-xs)">D8</span>
+              <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-tertiary)">Sat 21 Nov</span>
+              <h4 style="font-size:var(--text-md);font-weight:500;margin-left:auto">Kakusenkei Gorge (Kaga)</h4>
+            </div>
+            
+            <div style="font-family:var(--font-mono);font-size:var(--text-xs);line-height:1.8;color:var(--text-secondary);background:var(--parchment-soft);border-radius:var(--radius-sm);padding:var(--space-2) var(--space-3)">09:00 Shinkansen to Kaga · 09:50 bus to Yamanaka · 10:30 gorge walk · 12:30 onsen + lunch · 15:30 back to Kanazawa · 18:00 Kenroku-en light-up</div>
+            
+            <p style="font-size:var(--text-sm);line-height:1.7;color:var(--text-secondary)">A Kaga day-trip for a riverside foliage walk and a hot-spring soak, back in time for Kenroku-en lit up. Foliage runs late here, so the 21st should be near peak.</p>
+            <ol style="font-size:var(--text-sm);line-height:1.7;color:var(--text-secondary);padding-left:20px;display:flex;flex-direction:column;gap:var(--space-2)">
+              <li><strong>Kanazawa → Kaga Onsen · 09:00</strong> — Hokuriku Shinkansen, ~20 min; a 09:00 train gets you in at 09:20.</li>
+              <li><strong>Kaga Onsen → Yamanaka Onsen · 09:50</strong> — Hokutetsu Kaga Bus (Onsen-Yamanaka line, <strong>platform 2</strong>) to the terminal (~30 min · ¥430 · cash), then a 5-min walk to the gorge. Buses are sparse — note your return times.</li>
+              <li><strong>Kakusenkei Gorge walk · 10:30</strong> — the 1.3 km riverside promenade past the all-cypress <strong>Kōrogi-bashi</strong> and the crimson S-shaped <strong>Ayatori-bashi</strong>, maples over the water, with a terrace café for Kaga tea. 1–1.5 h.</li>
+              <li><strong>Yamanaka Onsen soak + lunch · 12:30</strong> — <strong>Kiku-no-yu</strong>, the 1,300-year-old public bathhouse (¥500); soba or Kaga-ryōri in town, maybe a footbath along Yuge Kaidō.</li>
+              <li><strong>Back to Kanazawa · 15:30</strong> — bus to Kaga Onsen, Shinkansen back; aim to return by 16:00.</li>
+              <li><strong>Kenroku-en night illumination · ~18:00</strong> — the garden lit after dark, usually free. Select autumn weekends (~18:00–20:45); the 21st is a Saturday and likely within the window — confirm the 2026 dates.</li>
+            </ol>
+            <div style="display:flex;gap:var(--space-4);font-size:var(--text-sm);line-height:1.6;color:var(--text-secondary);border-top:1px solid var(--border-subtle);padding-top:var(--space-3)">
+              <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-tertiary);flex:0 0 74px;padding-top:4px">Notes</span>
+              <div>21 Nov opens the 23 Nov holiday weekend, so Kakusenkei gets busy — go early. The gorge terrace café runs 10:00–15:00 in November, and the path has no lighting after dark.</div>
+            </div>
+            <div style="display:flex;gap:var(--space-4);font-size:var(--text-sm);line-height:1.6;color:var(--text-secondary);border-top:1px solid var(--border-subtle);padding-top:var(--space-3)">
+              <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ember);flex:0 0 74px;padding-top:4px">Eat</span>
+              <div>Kaga tea and sweets on the gorge's riverside terrace by day; back in Kanazawa, dinner around <strong>Katamachi</strong>, or oden at a local counter.</div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <div style="position:relative;border-left:2px solid var(--border-default);padding:0 0 var(--space-10) var(--space-8)">
+        <div style="position:absolute;left:-5px;top:6px;width:8px;height:8px;border-radius:50%;background:var(--border-strong)"></div>
+        <div style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-tertiary);letter-spacing:.04em">Highway bus · Kanazawa → Shirakawa-gō → Takayama · reserve ahead</div>
+      </div>
+
+      <div style="position:relative;border-left:2px solid var(--border-default);padding:0 0 var(--space-10) var(--space-8)">
+        <div style="position:absolute;left:-9px;top:6px;width:16px;height:16px;border-radius:50%;background:var(--parchment);border:2px solid var(--border-strong)"></div>
+        <div style="display:flex;align-items:baseline;gap:var(--space-4);flex-wrap:wrap;margin-bottom:var(--space-4)">
+          <h3 style="font-family:var(--font-serif);font-size:var(--text-2xl);font-weight:400">Takayama</h3>
+          <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-secondary);background:var(--sand);padding:4px 10px;border-radius:var(--radius-sm)">Days 9–10 · bus &amp; rail base</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:var(--space-4)">
+
+          <article style="background:var(--surface-raised);border-radius:var(--radius-md);box-shadow:var(--shadow-sm);padding:var(--space-5) var(--space-6);display:flex;flex-direction:column;gap:var(--space-3)">
+            <div style="display:flex;align-items:baseline;gap:var(--space-3);flex-wrap:wrap">
+              <span style="font-family:var(--font-mono);font-size:var(--text-xs);font-weight:500;color:var(--parchment);background:var(--espresso);padding:3px 8px;border-radius:var(--radius-xs)">D9</span>
+              <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-tertiary)">Sun 22 Nov</span>
+              <h4 style="font-size:var(--text-md);font-weight:500;margin-left:auto">Bus to Shirakawa-gō &amp; Takayama</h4>
+            </div>
+            
+            <div style="font-family:var(--font-mono);font-size:var(--text-xs);line-height:1.8;color:var(--text-secondary);background:var(--parchment-soft);border-radius:var(--radius-sm);padding:var(--space-2) var(--space-3)">08:30 bus from Kanazawa · 10:00 Shirakawa-gō · 13:00 bus to Takayama · 14:00 check in · 15:00 Higashiyama walk · 18:30 Hida beef</div>
+            
+            <p style="font-size:var(--text-sm);line-height:1.7;color:var(--text-secondary)">Over the mountains by bus, no wheels needed — a morning in the thatched village, then on to your Takayama base for two nights. Skipping Gokayama, a quieter version of the same thing.</p>
+            <ol style="font-size:var(--text-sm);line-height:1.7;color:var(--text-secondary);padding-left:20px;display:flex;flex-direction:column;gap:var(--space-2)">
+              <li><strong>Bus from Kanazawa · 08:30</strong> — the <strong>Nohi / Hokutetsu highway bus</strong> to Shirakawa-gō (~1 h 15). Reserve ahead.</li>
+              <li><strong>Shirakawa-gō · 10:00</strong> — the gasshō-zukuri village and the <strong>Shiroyama viewpoint</strong> (shuttle up); stash bags in the village lockers while you wander.</li>
+              <li><strong>Bus to Takayama · 13:00</strong> — the connecting bus over (~50 min).</li>
+              <li><strong>Check in · 14:00</strong> — the bus arrives at the Nohi Bus Center, right across from <strong>HOTEL AMANEK</strong>; drop bags for two nights.</li>
+              <li><strong>Higashiyama walk · 15:00</strong> — the late-afternoon walking course and Shiroyama Park for colour, or Hida Folk Village.</li>
+              <li><strong>Hida beef dinner · 18:30</strong> — in the old town.</li>
+            </ol>
+            <div style="display:flex;gap:var(--space-4);font-size:var(--text-sm);line-height:1.6;color:var(--text-secondary);border-top:1px solid var(--border-subtle);padding-top:var(--space-3)">
+              <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ember);flex:0 0 74px;padding-top:4px">Eat</span>
+              <div>Hida beef at <strong>Kitchen Hida</strong> (reserve) or casual <strong>Hidatakayama Meat</strong> in the old town.</div>
+            </div>
+          </article>
+
+          <article style="background:var(--surface-raised);border-radius:var(--radius-md);box-shadow:var(--shadow-sm);padding:var(--space-5) var(--space-6);display:flex;flex-direction:column;gap:var(--space-3)">
+            <div style="display:flex;align-items:baseline;gap:var(--space-3);flex-wrap:wrap">
+              <span style="font-family:var(--font-mono);font-size:var(--text-xs);font-weight:500;color:var(--parchment);background:var(--espresso);padding:3px 8px;border-radius:var(--radius-xs)">D10</span>
+              <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-tertiary)">Mon 23 Nov</span>
+              <h4 style="font-size:var(--text-md);font-weight:500;margin-left:auto">Shinhotaka Ropeway (Okuhida)</h4>
+            </div>
+            
+            <div style="font-family:var(--font-mono);font-size:var(--text-xs);line-height:1.8;color:var(--text-secondary);background:var(--parchment-soft);border-radius:var(--radius-sm);padding:var(--space-2) var(--space-3)">09:00 Nohi bus · 10:40 ropeway · 11:30 summit deck 2,156 m · 14:00 Okuhida onsen · 16:55 last bus back · 18:30 Takayama dinner</div>
+            
+            <p style="font-size:var(--text-sm);line-height:1.7;color:var(--text-secondary)">Trade the old town for the high Alps — Japan’s only double-decker gondola into the Northern Alps, topping out over the snow-dusted Hida peaks.</p>
+            <ol style="font-size:var(--text-sm);line-height:1.7;color:var(--text-secondary);padding-left:20px;display:flex;flex-direction:column;gap:var(--space-2)">
+              <li><strong>Nohi bus · 09:00</strong> — from the Takayama Nohi Bus Center across from your hotel to the last stop (~90 min · ¥2,200 · roughly hourly; buy the bus + ropeway combo at the counter). No reservations, so go early on a holiday Monday.</li>
+              <li><strong>Shinhotaka Ropeway · 10:40</strong> — the climb into the Northern Alps.</li>
+              <li><strong>Summit deck · 11:30</strong> — <strong>Nishi-Hotakaguchi (~2,156 m)</strong>, a panoramic deck over the peaks — the closest thing to Kamikōchi’s alpine drama still open in late November.</li>
+              <li><strong>Okuhida onsen · 14:00</strong> — a soak in the villages at the base; there’s a free footbath by the ropeway while you watch the gondolas come and go.</li>
+              <li><strong>Last bus back · 16:55</strong> — the final bus leaves the ropeway; don’t miss it.</li>
+              <li><strong>Takayama dinner · 18:30</strong> — Hida beef back in town.</li>
+            </ol>
+            <div style="display:flex;gap:var(--space-4);font-size:var(--text-sm);line-height:1.6;color:var(--text-secondary);border-top:1px solid var(--border-subtle);padding-top:var(--space-3)">
+              <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ember);flex:0 0 74px;padding-top:4px">Watch</span>
+              <div>The ropeway shuts for maintenance <strong>24–27 Nov</strong>, so the 23rd is the <strong>last running day</strong> — no rescheduling, and it also closes in bad weather. It is a holiday Monday too, so go early; buses fill and take no reservations. Wet-weather backup: the <strong>Takayama morning markets and Sanmachi old town</strong> (easy to shift to your D11 morning) or <strong>Hida Folk Village</strong>.</div>
+            </div>
+            <div style="display:flex;gap:var(--space-4);font-size:var(--text-sm);line-height:1.6;color:var(--text-secondary);border-top:1px solid var(--border-subtle);padding-top:var(--space-3)">
+              <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ember);flex:0 0 74px;padding-top:4px">Eat</span>
+              <div>Hida-beef buns and fresh bread at the ropeway stations, or an Okuhida onsen-town lunch; Hida beef back in Takayama at <strong>Kitchen Hida</strong> or grazing Sanmachi.</div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <div style="position:relative;border-left:2px solid var(--border-default);padding:0 0 var(--space-10) var(--space-8)">
+        <div style="position:absolute;left:-5px;top:6px;width:8px;height:8px;border-radius:50%;background:var(--border-strong)"></div>
+        <div style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-tertiary);letter-spacing:.04em">Limited Express Hida · Takayama → Nagoya ~2.5 h</div>
+      </div>
+
+      <div style="position:relative;border-left:2px solid var(--border-default);padding:0 0 var(--space-10) var(--space-8)">
+        <div style="position:absolute;left:-9px;top:6px;width:16px;height:16px;border-radius:50%;background:var(--ember-wash);border:2px solid var(--ember)"></div>
+        <div style="display:flex;align-items:baseline;gap:var(--space-4);flex-wrap:wrap;margin-bottom:var(--space-4)">
+          <h3 style="font-family:var(--font-serif);font-size:var(--text-2xl);font-weight:400">Nagoya</h3>
+          <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--ember);background:var(--ember-wash);padding:4px 10px;border-radius:var(--radius-sm)">Days 11–15 · foliage to lights</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:var(--space-4)">
+
+          <article style="background:var(--surface-raised);border-radius:var(--radius-md);box-shadow:var(--shadow-sm);padding:var(--space-5) var(--space-6);display:flex;flex-direction:column;gap:var(--space-3)">
+            <div style="display:flex;align-items:baseline;gap:var(--space-3);flex-wrap:wrap">
+              <span style="font-family:var(--font-mono);font-size:var(--text-xs);font-weight:500;color:var(--parchment);background:var(--espresso);padding:3px 8px;border-radius:var(--radius-xs)">D11</span>
+              <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-tertiary)">Tue 24 Nov</span>
+              <h4 style="font-size:var(--text-md);font-weight:500;margin-left:auto">Takayama → Nagoya · Inuyama</h4>
+            </div>
+            
+            <div style="font-family:var(--font-mono);font-size:var(--text-xs);line-height:1.8;color:var(--text-secondary);background:var(--parchment-soft);border-radius:var(--radius-sm);padding:var(--space-2) var(--space-3)">07:30 morning markets · 09:40 JR Hida south · 12:15 Nagoya · 13:30 Meitetsu to Inuyama · 14:00 Inuyama Castle · 17:30 Sakae dinner</div>
+            
+            <p style="font-size:var(--text-sm);line-height:1.7;color:var(--text-secondary)">One last Takayama morning, then the scenic train south. Inuyama is optional if the day feels full; it also fits on D13.</p>
+            <ol style="font-size:var(--text-sm);line-height:1.7;color:var(--text-secondary);padding-left:20px;display:flex;flex-direction:column;gap:var(--space-2)">
+              <li><strong>Morning markets · 07:30</strong> — the riverside <strong>morning markets</strong> and the <strong>Sanmachi</strong> old town.</li>
+              <li><strong>JR Hida south · 09:40</strong> — the <strong>Limited Express Hida</strong> to Nagoya (~2.5 h) down the Hida-river gorge on the big-windowed HC85; take a reserved window seat.</li>
+              <li><strong>Nagoya · 12:15</strong> — drop bags.</li>
+              <li><strong>Meitetsu to Inuyama · 13:30</strong> — the line north (~28 min).</li>
+              <li><strong>Inuyama Castle · 14:00</strong> — one of Japan’s twelve original keeps and a National Treasure, above the Kiso River with late-Nov maples, plus its Edo-era castle town and the heart-ema <strong>Sanko Inari Shrine</strong>.</li>
+              <li><strong>Sakae dinner · 17:30</strong> — back in Nagoya. Nagoya Castle and Atsuta wait for the full city day.</li>
+            </ol>
+            <div style="display:flex;gap:var(--space-4);font-size:var(--text-sm);line-height:1.6;color:var(--text-secondary);border-top:1px solid var(--border-subtle);padding-top:var(--space-3)">
+              <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ember);flex:0 0 74px;padding-top:4px">Eat</span>
+              <div>Graze the Shōwa-era snack alley in Inuyama's castle town — kushi, dango, sweets. Dinner in Nagoya: hitsumabushi at <strong>Hitsumabushi Hanaoka</strong> in Sakae; grab a queue ticket early.</div>
+            </div>
+          </article>
+
+          <article style="background:var(--surface-raised);border-radius:var(--radius-md);box-shadow:var(--shadow-sm);padding:var(--space-5) var(--space-6);display:flex;flex-direction:column;gap:var(--space-3)">
+            <div style="display:flex;align-items:baseline;gap:var(--space-3);flex-wrap:wrap">
+              <span style="font-family:var(--font-mono);font-size:var(--text-xs);font-weight:500;color:var(--parchment);background:var(--espresso);padding:3px 8px;border-radius:var(--radius-xs)">D12</span>
+              <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-tertiary)">Wed 25 Nov</span>
+              <h4 style="font-size:var(--text-md);font-weight:500;margin-left:auto">Kōrankei + Obara</h4>
+            </div>
+            
+            <div style="font-family:var(--font-mono);font-size:var(--text-xs);line-height:1.8;color:var(--text-secondary);background:var(--parchment-soft);border-radius:var(--radius-sm);padding:var(--space-2) var(--space-3)">09:00 depart · 10:30 Obara shikizakura · 13:00 Kōrankei valley · 16:30 dusk light-up · 19:00 back to Nagoya</div>
+            
+            <p style="font-size:var(--text-sm);line-height:1.7;color:var(--text-secondary)">A double bill of autumn colour, both in Toyota City. The two spots are awkward to link by public transport in a day, so an English-guided <strong>one-day bus tour from Nagoya</strong> is the low-stress pick; DIY is Meitetsu to Toyota-shi, then the Oiden bus.</p>
+            <ol style="font-size:var(--text-sm);line-height:1.7;color:var(--text-secondary);padding-left:20px;display:flex;flex-direction:column;gap:var(--space-2)">
+              <li><strong>Depart · 09:00</strong> — out to Toyota City.</li>
+              <li><strong>Obara · 10:30</strong> — its <strong>shikizakura</strong>, four-season cherry that flowers a second time each November, so pale-pink blossom sits against fiery maples. Best at <strong>Senmi Shikizakura-no-Sato</strong> and the riverside Kakigairi path; <strong>Obara Fureai Park</strong> is the festival hub.</li>
+              <li><strong>Kōrankei valley · 13:00</strong> — the region’s most famous maple valley, 4,000 trees along the Tomoe river at their late-November peak.</li>
+              <li><strong>Dusk light-up · 16:30</strong> — daylight sliding into the evening illumination; a post-holiday Wednesday, so calmer than the weekend.</li>
+              <li><strong>Back to Nagoya · ~19:00</strong>. Wet-weather backup: the <strong>SCMaglev &amp; Railway Park</strong> or the <strong>Port of Nagoya Aquarium</strong>.</li>
+            </ol>
+            <div style="display:flex;gap:var(--space-4);font-size:var(--text-sm);line-height:1.6;color:var(--text-secondary);border-top:1px solid var(--border-subtle);padding-top:var(--space-3)">
+              <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ember);flex:0 0 74px;padding-top:4px">Eat</span>
+              <div>Graze the festival stalls at both: gohei mochi and five-colour dango at Kōrankei, Fuyu and Jiro persimmons in Obara. Back in Nagoya: miso katsu at <strong>Yabaton</strong> and <strong>Senju Osu</strong> for tenmusu in the Ōsu arcades.</div>
+            </div>
+          </article>
+
+          <article style="background:var(--surface-raised);border-radius:var(--radius-md);box-shadow:var(--shadow-sm);padding:var(--space-5) var(--space-6);display:flex;flex-direction:column;gap:var(--space-3)">
+            <div style="display:flex;align-items:baseline;gap:var(--space-3);flex-wrap:wrap">
+              <span style="font-family:var(--font-mono);font-size:var(--text-xs);font-weight:500;color:var(--parchment);background:var(--espresso);padding:3px 8px;border-radius:var(--radius-xs)">D13</span>
+              <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-tertiary)">Thu 26 Nov</span>
+              <h4 style="font-size:var(--text-md);font-weight:500;margin-left:auto">Nagoya city day</h4>
+            </div>
+            
+            <div style="font-family:var(--font-mono);font-size:var(--text-xs);line-height:1.8;color:var(--text-secondary);background:var(--parchment-soft);border-radius:var(--radius-sm);padding:var(--space-2) var(--space-3)">09:30 Nagoya Castle · 12:00 lunch · 13:30 Atsuta Jingū · 15:00 Ōsu + Pokémon Center · 18:00 dinner</div>
+            
+            <p style="font-size:var(--text-sm);line-height:1.7;color:var(--text-secondary)">The day the extra Nagoya night buys you — the city at an easy pace instead of crammed onto a travel day, with the castle in the north and Atsuta down south taken without racing between them.</p>
+            <ol style="font-size:var(--text-sm);line-height:1.7;color:var(--text-secondary);padding-left:20px;display:flex;flex-direction:column;gap:var(--space-2)">
+              <li><strong>Nagoya Castle · 09:30</strong> — the castle and the rebuilt <strong>Honmaru Palace</strong> on the north side.</li>
+              <li><strong>Lunch · 12:00</strong> — a Nagoya-meshi stop (see below).</li>
+              <li><strong>Atsuta Jingū · 13:30</strong> — one of Shintō’s most revered shrines, in a wooded grove down south.</li>
+              <li><strong>Ōsu + Pokémon Center · 15:00</strong> — the <strong>Ōsu</strong> arcades for retro, vintage and street food; <strong>Pokémon Center Nagoya</strong> in Sakae, PARCO East.</li>
+              <li><strong>Dinner · 18:00</strong>. Colour add-on: <strong>Tokugawa-en</strong>, a strolling garden with maples around its pond.</li>
+            </ol>
+            <div style="display:flex;gap:var(--space-4);font-size:var(--text-sm);line-height:1.6;color:var(--text-secondary);border-top:1px solid var(--border-subtle);padding-top:var(--space-3)">
+              <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ember);flex:0 0 74px;padding-top:4px">Eat</span>
+              <div>The Nagoya-meshi run: miso katsu at <strong>Yabaton</strong>, tebasaki at <strong>Sekai no Yamachan</strong> or <strong>Furaibō</strong>, miso-nikomi udon at <strong>Yamamotoya Sōhonten</strong>. Tenmusu and taiyaki in the Ōsu arcades.</div>
+            </div>
+          </article>
+
+          <article style="background:var(--surface-raised);border-radius:var(--radius-md);box-shadow:var(--shadow-sm);padding:var(--space-5) var(--space-6);display:flex;flex-direction:column;gap:var(--space-3)">
+            <div style="display:flex;align-items:baseline;gap:var(--space-3);flex-wrap:wrap">
+              <span style="font-family:var(--font-mono);font-size:var(--text-xs);font-weight:500;color:var(--parchment);background:var(--ember);padding:3px 8px;border-radius:var(--radius-xs)">D14</span>
+              <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-tertiary)">Fri 27 Nov</span>
+              <h4 style="font-size:var(--text-md);font-weight:500;margin-left:auto">Nagoya finale · Nabana no Sato lights</h4>
+            </div>
+            
+            <div style="font-family:var(--font-mono);font-size:var(--text-xs);line-height:1.8;color:var(--text-secondary);background:var(--parchment-soft);border-radius:var(--radius-sm);padding:var(--space-2) var(--space-3)">09:00 Tokugawa-en · 11:00 Sakae · 14:00 Nagashima outlet · dusk Nabana lights · dinner</div>
+            
+            <p style="font-size:var(--text-sm);line-height:1.7;color:var(--text-secondary)">Your last full day, and nothing to catch until tomorrow afternoon — so fill it. A garden-and-city Nagoya morning, an afternoon at the Nagashima resort, and <strong>Nabana no Sato</strong> — one of Japan’s biggest winter illuminations — as the send-off. Want a single big finale instead? <strong>Ghibli Park</strong> in Nagakute can take the whole day, but its timed tickets must be booked well ahead.</p>
+            <ol style="font-size:var(--text-sm);line-height:1.7;color:var(--text-secondary);padding-left:20px;display:flex;flex-direction:column;gap:var(--space-2)">
+              <li><strong>Tokugawa-en + Tokugawa Art Museum · 09:00</strong> — the strolling garden’s maples and pond, then the samurai armour, swords and a <em>Tale of Genji</em> scroll next door.</li>
+              <li><strong>Sakae · 11:00</strong> — Oasis 21’s floating glass “spaceship” roof, the Mirai Tower and Hisaya-odori Park beneath it, and the Sky Promenade view; lunch here.</li>
+              <li><strong>To the Nagashima resort · ~14:00</strong> — Meitetsu highway bus from the Meitetsu Bus Center (4F), ~35 min. Mitsui Outlet Park for shopping and a Nagashima Onsen footbath before dark.</li>
+              <li><strong>Nabana no Sato illumination · dusk–evening</strong> — one of Japan’s largest, 8-million-plus LEDs, the 200 m light tunnel and the illumination-on-water; lights on at dusk. ~¥2,500 walk-up (includes a spending voucher).</li>
+              <li><strong>Dinner</strong> — at the resort, or back near your hotel in Nagoya.</li>
+            </ol>
+            <div style="display:flex;gap:var(--space-4);font-size:var(--text-sm);line-height:1.6;color:var(--text-secondary);border-top:1px solid var(--border-subtle);padding-top:var(--space-3)">
+              <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ember);flex:0 0 74px;padding-top:4px">Eat</span>
+              <div>At Nabana no Sato, stalls and restaurants in the flower village; back in Nagoya, a last Nagoya-meshi round — hitsumabushi (grilled eel) at <strong>Atsuta Hōraiken</strong>, or an ankake-spaghetti oddity if you’re game.</div>
+            </div>
+          </article>
+
+          <article style="background:var(--surface-raised);border-radius:var(--radius-md);box-shadow:var(--shadow-sm);padding:var(--space-5) var(--space-6);display:flex;flex-direction:column;gap:var(--space-3)">
+            <div style="display:flex;align-items:baseline;gap:var(--space-3);flex-wrap:wrap">
+              <span style="font-family:var(--font-mono);font-size:var(--text-xs);font-weight:500;color:var(--parchment);background:var(--espresso);padding:3px 8px;border-radius:var(--radius-xs)">D15</span>
+              <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-tertiary)">Sat 28 Nov</span>
+              <h4 style="font-size:var(--text-md);font-weight:500;margin-left:auto">Fly home · from Centrair</h4>
+            </div>
+            
+            <div style="font-family:var(--font-mono);font-size:var(--text-xs);line-height:1.8;color:var(--text-secondary);background:var(--parchment-soft);border-radius:var(--radius-sm);padding:var(--space-2) var(--space-3)">09:00 Noritake Garden · 10:30 station souvenirs · 11:45 μ-Sky to Centrair · 15:15 fly home</div>
+            
+            <p style="font-size:var(--text-sm);line-height:1.7;color:var(--text-secondary)">A full but easy last morning in Nagoya, then the quick hop out to Centrair for the afternoon flight — no cross-country dash on the last day.</p>
+            <ol style="font-size:var(--text-sm);line-height:1.7;color:var(--text-secondary);padding-left:20px;display:flex;flex-direction:column;gap:var(--space-2)">
+              <li><strong>Morning · 09:00</strong> — one last Nagoya hit: the red-brick <strong>Noritake Garden</strong> (free grounds, kilns and a craft studio) near the station, or a final Ōsu shopping run. Leave bags at the hotel.</li>
+              <li><strong>Station souvenirs · 10:30</strong> — JR Gate Tower and Takashimaya Gate Walk for last omiyage — uirō, ebi-senbei, Nagoya coffee.</li>
+              <li><strong>μ-Sky to Centrair · 11:45</strong> — the Meitetsu μ-Sky from Meitetsu Nagoya, ~28 min straight to the airport.</li>
+              <li><strong>Chubu Centrair · from 12:15</strong> — check in for CX539; the Sky Town deck, the shops and the Flight of Dreams 787 hall reward the early arrival.</li>
+              <li><strong>NGO → HKG · 15:15</strong> — CX539 (arrives 19:10), then CX659 overnight Hong Kong → Singapore, landing Changi 05:40 on the 29th.</li>
+            </ol>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div style="display:flex;align-items:baseline;gap:var(--space-4);margin-bottom:var(--space-4)">
+      <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--amber-dark);letter-spacing:.08em">04</span>
+      <h2 style="font-size:var(--text-2xl);font-weight:600">Sweet stops &amp; snacks</h2>
+    </div>
+    <p style="color:var(--text-secondary);max-width:64ch;margin-bottom:var(--space-6)">Non-coffee cafés, street snacks and regional sweets worth going out of your way for.</p>
+    <div class="two-col" style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-4)">
+      <div style="background:var(--sand);border-radius:var(--radius-md);padding:var(--space-5);box-shadow:var(--shadow-xs)"><div class="eyebrow" style="color:var(--amber-dark);margin-bottom:var(--space-2)">Osaka</div><h4 style="font-size:var(--text-md);font-weight:500;margin-bottom:var(--space-2)">Warabi mochi &amp; matcha</h4><p style="font-size:var(--text-sm);color:var(--text-secondary);line-height:1.6"><strong>Torori Tenshi-no-Warabimochi</strong> in Tenjinbashi — silky bracken-starch mochi and a standout matcha latte. Plus <strong>Oh Mochi</strong> in Dōtonbori if you want to pound your own.</p></div>
+      <div style="background:var(--sand);border-radius:var(--radius-md);padding:var(--space-5);box-shadow:var(--shadow-xs)"><div class="eyebrow" style="color:var(--amber-dark);margin-bottom:var(--space-2)">Minoh</div><h4 style="font-size:var(--text-md);font-weight:500;margin-bottom:var(--space-2)">Momiji tempura</h4><p style="font-size:var(--text-sm);color:var(--text-secondary);line-height:1.6">Candied deep-fried maple leaves, crisp and karinto-sweet, sold fresh along the falls approach — <strong>Koyo-ryorikan</strong> and <strong>Momotaro</strong> are the go-tos.</p></div>
+      <div style="background:var(--sand);border-radius:var(--radius-md);padding:var(--space-5);box-shadow:var(--shadow-xs)"><div class="eyebrow" style="color:var(--amber-dark);margin-bottom:var(--space-2)">Kyoto by the Sea</div><h4 style="font-size:var(--text-md);font-weight:500;margin-bottom:var(--space-2)">Amanohashidate &amp; Ine</h4><p style="font-size:var(--text-sm);color:var(--text-secondary);line-height:1.6"><strong>Amanohashidate</strong> — one of Japan's Three Views, a 3.6 km pine sandbar seen from a hilltop chairlift. <strong>Ine no Funaya</strong> — 230 boathouses over the bay, toured by boat; plus <strong>Miyama</strong>’s thatched village. A booked D3 coach day up the Sea of Japan coast.</p></div>
+      <div style="background:var(--sand);border-radius:var(--radius-md);padding:var(--space-5);box-shadow:var(--shadow-xs)"><div class="eyebrow" style="color:var(--amber-dark);margin-bottom:var(--space-2)">Kyoto</div><h4 style="font-size:var(--text-md);font-weight:500;margin-bottom:var(--space-2)">Matcha &amp; tea ceremony</h4><p style="font-size:var(--text-sm);color:var(--text-secondary);line-height:1.6"><strong>Kashoan</strong> for single-origin matcha in a Higashiyama machiya; <strong>Ryurei SABI</strong> in Gion for a modern tea-ceremony tasting with wagashi.</p></div>
+      <div style="background:var(--sand);border-radius:var(--radius-md);padding:var(--space-5);box-shadow:var(--shadow-xs)"><div class="eyebrow" style="color:var(--amber-dark);margin-bottom:var(--space-2)">Kanazawa</div><h4 style="font-size:var(--text-md);font-weight:500;margin-bottom:var(--space-2)">Gold-leaf soft serve</h4><p style="font-size:var(--text-sm);color:var(--text-secondary);line-height:1.6"><strong>Hakuichi</strong> in Higashi Chaya — vanilla soft serve crowned with a full sheet of edible gold leaf. Very Kanazawa; do it once.</p></div>
+      <div style="background:var(--sand);border-radius:var(--radius-md);padding:var(--space-5);box-shadow:var(--shadow-xs)"><div class="eyebrow" style="color:var(--amber-dark);margin-bottom:var(--space-2)">Takayama</div><h4 style="font-size:var(--text-md);font-weight:500;margin-bottom:var(--space-2)">Dango &amp; gohei mochi</h4><p style="font-size:var(--text-sm);color:var(--text-secondary);line-height:1.6"><strong>Tocco</strong> at the Miyagawa morning market — mitarashi dango and savoury gohei mochi with a charred crust. Hida-beef nigiri from the Sanmachi stalls.</p></div>
+      <div style="background:var(--sand);border-radius:var(--radius-md);padding:var(--space-5);box-shadow:var(--shadow-xs)"><div class="eyebrow" style="color:var(--amber-dark);margin-bottom:var(--space-2)">Nagoya</div><h4 style="font-size:var(--text-md);font-weight:500;margin-bottom:var(--space-2)">Tenmusu &amp; ogura toast</h4><p style="font-size:var(--text-sm);color:var(--text-secondary);line-height:1.6"><strong>Senju Osu</strong> for tenmusu, shrimp-tempura rice balls; <strong>Groove Coffee</strong> in Sakae for red-bean-and-butter ogura toast, a classic Nagoya breakfast.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div style="display:flex;align-items:baseline;gap:var(--space-4);margin-bottom:var(--space-4)">
+      <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--amber-dark);letter-spacing:.08em">05</span>
+      <h2 style="font-size:var(--text-2xl);font-weight:600">Where to stay</h2>
+    </div>
+    <p style="color:var(--text-secondary);max-width:64ch;margin-bottom:var(--space-6)">One reliable pick and one alternate per base, chosen for where you'll be each night. Ratings from Google.</p>
+    <div class="two-col" style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-4)">
+      <div style="background:var(--sand);border-radius:var(--radius-md);padding:var(--space-5);box-shadow:var(--shadow-xs)"><div class="eyebrow" style="color:var(--amber-dark);margin-bottom:var(--space-2)">Osaka · nights 1–3</div><h4 style="font-size:var(--text-md);font-weight:500;margin-bottom:var(--space-2)">Tenmabashi</h4><p style="font-size:var(--text-sm);color:var(--text-secondary);line-height:1.6"><strong>Hotel Keihan Temmabashi Ekimae</strong> (4.3) — across from Tenmabashi Station, a short walk from <strong>Osaka Castle Park</strong> and the Ōkawa riverside. The Keihan line runs straight to Fushimi Inari and central Kyoto, handy for the D4 move over.</p><p style="font-size:var(--text-sm);margin-top:var(--space-3)"><a href="https://www.google.com/maps/dir/?api=1&amp;destination=Hotel%20Keihan%20Temmabashi%20Ekimae&amp;destination_place_id=ChIJ0bBQ4HLnAGARE2oKTFbRLoc" target="_blank" rel="noopener">Directions in Google Maps</a></p></div>
+      <div style="background:var(--sand);border-radius:var(--radius-md);padding:var(--space-5);box-shadow:var(--shadow-xs)"><div class="eyebrow" style="color:var(--amber-dark);margin-bottom:var(--space-2)">Kyoto · nights 4–6</div><h4 style="font-size:var(--text-md);font-weight:500;margin-bottom:var(--space-2)">By Kyoto Station</h4><p style="font-size:var(--text-sm);color:var(--text-secondary);line-height:1.6"><strong>Booked · Hotel Elcient Kyoto Hachijoguchi</strong> — a 2-min walk from Kyoto Station's Hachijo East exit, with a sauna and public bath. A hub base: JR Nara line for D5's Fushimi Inari, JR Sagano line for D6's Arashiyama, and two minutes from the D7 Thunderbird to Kanazawa. Higashiyama and Gion are a short bus or subway ride rather than a walk.</p></div>
+      <div style="background:var(--sand);border-radius:var(--radius-md);padding:var(--space-5);box-shadow:var(--shadow-xs)"><div class="eyebrow" style="color:var(--amber-dark);margin-bottom:var(--space-2)">Kanazawa · nights 7–8</div><h4 style="font-size:var(--text-md);font-weight:500;margin-bottom:var(--space-2)">By the station (East)</h4><p style="font-size:var(--text-sm);color:var(--text-secondary);line-height:1.6"><strong>Booked · Super Hotel Premier Kanazawa Station East</strong> — ~7 min from the station's East (Kenroku-en) exit, with a natural hot-spring bath (Tsuzumimon-no-yu), a free evening drinks lounge and a local-produce breakfast. Note the Shirakawa-gō bus leaves from the <strong>West</strong> exit, so allow a few minutes to cross the station on D9.</p></div>
+      <div style="background:var(--sand);border-radius:var(--radius-md);padding:var(--space-5);box-shadow:var(--shadow-xs)"><div class="eyebrow" style="color:var(--amber-dark);margin-bottom:var(--space-2)">Takayama · nights 9–10</div><h4 style="font-size:var(--text-md);font-weight:500;margin-bottom:var(--space-2)">By the station &amp; bus terminal</h4><p style="font-size:var(--text-sm);color:var(--text-secondary);line-height:1.6"><strong>Booked · HOTEL AMANEK Hida Takayama</strong> — a 3-min walk from Takayama Station and right across from the <strong>Nohi Bus Terminal</strong>, so your D9 arrival and the D10 Shinhotaka bus are on the doorstep. Newly built, with a rooftop natural onsen, open-air bath and sauna, and a Hida-ingredient breakfast buffet. Restaurant is breakfast-only, so head to the old town (~8 min) for Hida beef.</p></div>
+      <div style="background:var(--sand);border-radius:var(--radius-md);padding:var(--space-5);box-shadow:var(--shadow-xs)"><div class="eyebrow" style="color:var(--amber-dark);margin-bottom:var(--space-2)">Nagoya · nights 11–14</div><h4 style="font-size:var(--text-md);font-weight:500;margin-bottom:var(--space-2)">South of the station</h4><p style="font-size:var(--text-sm);color:var(--text-secondary);line-height:1.6"><strong>Booked · Kuretake Inn Premium Meieki Minami</strong> — ~4 min from Nagoya Station's Taiko-dori (Shinkansen) exit, with a public bath and sauna, a free evening happy-hour bar (18:00–20:00) and a breakfast buffet. The Meitetsu station and Bus Center — Inuyama, the Kōrankei tour, the Nabana bus and the μ-Sky to Centrair — are ~8 min across the station.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div style="display:flex;align-items:baseline;gap:var(--space-4);margin-bottom:var(--space-4)">
+      <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--amber-dark);letter-spacing:.08em">06</span>
+      <h2 style="font-size:var(--text-2xl);font-weight:600">Getting around</h2>
+    </div>
+    <p style="color:var(--text-secondary);max-width:64ch;margin-bottom:var(--space-6)">Grab an IC card on arrival — it covers every local train, subway and bus by tap. Reserve seats for the shinkansen legs and the all-reserved Thunderbird, especially over the foliage weekend. Times and fares are approximate.</p>
+    <div style="overflow-x:auto;-webkit-overflow-scrolling:touch">
+    <table style="width:100%;border-collapse:collapse;font-size:var(--text-sm);min-width:520px">
+      <thead><tr>
+        <th style="font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-tertiary);text-align:left;padding:var(--space-2) var(--space-3);border-bottom:1px solid var(--border-strong);font-weight:500">When</th>
+        <th style="font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-tertiary);text-align:left;padding:var(--space-2) var(--space-3);border-bottom:1px solid var(--border-strong);font-weight:500">Leg</th>
+        <th style="font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-tertiary);text-align:left;padding:var(--space-2) var(--space-3);border-bottom:1px solid var(--border-strong);font-weight:500">How</th>
+        <th style="font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-tertiary);text-align:left;padding:var(--space-2) var(--space-3);border-bottom:1px solid var(--border-strong);font-weight:500">Time · fare</th>
+      </tr></thead>
+      <tbody>
+        <tr><td style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-tertiary);padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top;white-space:nowrap">Day 1</td><td style="padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top"><strong>KIX → Tenmabashi</strong></td><td style="padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top;color:var(--text-secondary)">Nankai to Namba, then Tanimachi subway to Tenmabashi</td><td style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-secondary);padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top">~1 h · ~¥1,100</td></tr>
+        <tr><td style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-tertiary);padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top;white-space:nowrap">Day 2</td><td style="padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top"><strong>Tenmabashi → Katsuō-ji + Minoh</strong></td><td style="padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top;color:var(--text-secondary)">Midōsuji to Minoh-Kayano, Hankyu Bus #30 to Katsuō-ji, then down to the falls and out via Hankyu Minoo</td><td style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-secondary);padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top">~1 h in · bus ¥800</td></tr>
+        <tr><td style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-tertiary);padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top;white-space:nowrap">Day 3</td><td style="padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top"><strong>Osaka ⇄ Amanohashidate, Ine &amp; Miyama</strong></td><td style="padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top;color:var(--text-secondary)">Booked coach tour; meets Nihonbashi, disbands Shinsaibashi (Ine boat + cable car + Miyama)</td><td style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-secondary);padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top">~10 hrs · S$61+</td></tr>
+        <tr><td style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-tertiary);padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top;white-space:nowrap">Day 4</td><td style="padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top"><strong>Osaka → Kyoto → Uji</strong></td><td style="padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top;color:var(--text-secondary)">Into Kyoto Station (Keihan via Tofukuji, or JR), drop bags; JR Nara line round-trip to Uji</td><td style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-secondary);padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top">~45 min + 40 r/t · ¥900</td></tr>
+        <tr><td style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-tertiary);padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top;white-space:nowrap">Day 5</td><td style="padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top"><strong>Kyoto → Fushimi Inari → Kurama/Kibune</strong></td><td style="padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top;color:var(--text-secondary)">JR to Inari; Keihan north to Demachiyanagi, Eizan (Kirara) up — and back after dark for the lit tunnel</td><td style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-secondary);padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top">~1.5 h round · ¥900</td></tr>
+        <tr><td style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-tertiary);padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top;white-space:nowrap">Day 6</td><td style="padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top"><strong>Kyoto → Arashiyama</strong></td><td style="padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top;color:var(--text-secondary)">JR Sagano Line to Saga-Arashiyama; Torokko up, Hozugawa boat back</td><td style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-secondary);padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top">~15 min · ¥240 · Torokko ¥880</td></tr>
+        <tr><td style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-tertiary);padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top;white-space:nowrap">Day 7</td><td style="padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top"><strong>Kyoto → Kanazawa</strong></td><td style="padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top;color:var(--text-secondary)">Thunderbird to Tsuruga, cross-platform transfer to the Hokuriku Shinkansen. Direct trains ended in 2024.</td><td style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-secondary);padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top">~2 h · ~¥7,710 reserved</td></tr>
+        <tr><td style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-tertiary);padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top;white-space:nowrap">Day 8</td><td style="padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top"><strong>Kanazawa → Kakusenkei</strong></td><td style="padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top;color:var(--text-secondary)">Hokuriku Shinkansen to Kaga Onsen, then local bus to Yamanaka Onsen</td><td style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-secondary);padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top">~50 min each way + bus</td></tr>
+        <tr><td style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-tertiary);padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top;white-space:nowrap">Day 9</td><td style="padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top"><strong>Kanazawa → Shirakawa-gō → Takayama</strong></td><td style="padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top;color:var(--text-secondary)">Nohi / Hokutetsu highway bus, reserve ahead; coin lockers at Shirakawa-gō</td><td style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-secondary);padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top">~2 h total · ~¥4,400</td></tr>
+        <tr><td style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-tertiary);padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top;white-space:nowrap">Day 10</td><td style="padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top"><strong>Takayama → Shinhotaka Ropeway</strong></td><td style="padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top;color:var(--text-secondary)">Nohi Bus from the Nohi Bus Center, no reservation; last bus back 16:55</td><td style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-secondary);padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top">~90 min · ¥2,200</td></tr>
+        <tr><td style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-tertiary);padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top;white-space:nowrap">Day 11</td><td style="padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top"><strong>Takayama → Nagoya</strong> + Inuyama</td><td style="padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top;color:var(--text-secondary)">Limited Express Hida (reserved, HC85); in Nagoya, Meitetsu north to Inuyama</td><td style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-secondary);padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top">~2.5 h · ~¥6,140 reserved</td></tr>
+        <tr><td style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-tertiary);padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top;white-space:nowrap">Day 12</td><td style="padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top"><strong>Nagoya → Obara + Kōrankei</strong></td><td style="padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top;color:var(--text-secondary)">English-guided one-day bus tour is easiest, or DIY via Meitetsu to Toyota-shi + Oiden bus. Check the last illumination bus back.</td><td style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-secondary);padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top">full day · tour or bus</td></tr>
+        <tr><td style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-tertiary);padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top;white-space:nowrap">Day 13</td><td style="padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top"><strong>Nagoya city</strong></td><td style="padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top;color:var(--text-secondary)">Subway and Meitetsu: castle north, Atsuta Jingū south, Ōsu arcades, Pokémon Center in Sakae</td><td style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-secondary);padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top">local · IC card</td></tr>
+        <tr style="background:var(--ember-wash)"><td style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-tertiary);padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top;white-space:nowrap">Day 14</td><td style="padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top"><strong>Nagoya → Nabana no Sato</strong></td><td style="padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top;color:var(--text-secondary)">Direct Meitetsu highway bus (Meitetsu Bus Center 4F), or Kintetsu to Nagashima + free shuttle.</td><td style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-secondary);padding:var(--space-3);border-bottom:1px solid var(--border-subtle);vertical-align:top">~35 min</td></tr>
+        <tr><td style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-tertiary);padding:var(--space-3);vertical-align:top;white-space:nowrap">Day 15</td><td style="padding:var(--space-3);vertical-align:top"><strong>Nagoya → Centrair (NGO)</strong></td><td style="padding:var(--space-3);vertical-align:top;color:var(--text-secondary)">Meitetsu μ-Sky from Meitetsu Nagoya, straight to the airport</td><td style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-secondary);padding:var(--space-3);vertical-align:top">~28 min</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <section>
+    <div style="display:flex;align-items:baseline;gap:var(--space-4);margin-bottom:var(--space-6)">
+      <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--amber-dark);letter-spacing:.08em">07</span>
+      <h2 style="font-size:var(--text-2xl);font-weight:600">Before you go</h2>
+    </div>
+    <div class="two-col" style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-4)">
+      <div style="background:var(--sand);border-radius:var(--radius-md);padding:var(--space-6);box-shadow:var(--shadow-xs)">
+        <h3 style="font-size:var(--text-lg);font-weight:500;margin-bottom:var(--space-4)">Foliage timing</h3>
+        <ul style="padding-left:18px;display:flex;flex-direction:column;gap:var(--space-2);font-size:var(--text-sm);color:var(--text-secondary);line-height:1.6">
+          <li><strong>Minoh (Osaka):</strong> maples peak mid-to-late Nov — a great foliage half-day.</li>
+          <li><strong>Kyoto &amp; Uji:</strong> mid-to-late Nov is prime, at or near peak.</li>
+          <li><strong>Kanazawa:</strong> Kenroku-en colours mid-to-late Nov. Good timing.</li>
+          <li><strong>Takayama and Shirakawa-gō:</strong> higher and earlier, so possibly just past peak by the 22nd — the villages are still lovely.</li>
+          <li><strong>Kōrankei and Obara:</strong> late Nov is peak, the foliage highlight of the trip, paired with Obara's rare autumn shikizakura.</li>
+          <li><strong>Kōrankei &amp; Obara</strong> on D12 are the foliage peak of the trip. Check a kōyō forecast a few weeks out and be ready to shuffle a day if the front runs early or late.</li>
+        </ul>
+      </div>
+      <div style="background:var(--sand);border-radius:var(--radius-md);padding:var(--space-6);box-shadow:var(--shadow-xs)">
+        <h3 style="font-size:var(--text-lg);font-weight:500;margin-bottom:var(--space-4)">Pokémon Centers</h3>
+        <ul style="padding-left:18px;display:flex;flex-direction:column;gap:var(--space-2);font-size:var(--text-sm);color:var(--text-secondary);line-height:1.6">
+          <li><strong>Osaka · Umeda</strong> — Daimaru Umeda 13F (LUCUA 1100), the city’s bigger store, with Nintendo Osaka on the same floor. On D2, back from Minoh.</li>
+          <li><strong>Osaka DX · Shinsaibashi</strong> — Daimaru Shinsaibashi 9F. Smaller, but the Pokémon Café is next door, reservation-only.</li>
+          <li><strong>Nagoya · Sakae</strong> — PARCO East 2F. Handy on D13; weekends may need timed entry.</li>
+          <li><strong>Kyoto · SUINA Muromachi 2F</strong> (Shijō-Karasuma, to 20:00) — best on D6, when you’re downtown for dinner anyway; pop in before you eat.</li>
+          <li><strong>Kanazawa · Forus 5F</strong> — one minute from the station and your hotel, open to 20:00. New on D7, after Higashi Chaya.</li>
+        </ul>
+      </div>
+      <div style="grid-column:1/-1;background:var(--sand);border-radius:var(--radius-md);padding:var(--space-6);box-shadow:var(--shadow-xs)">
+        <h3 style="font-size:var(--text-lg);font-weight:500;margin-bottom:var(--space-4)">The Hida leg by bus and rail (Days 9–11)</h3>
+        <ul style="padding-left:18px;display:flex;flex-direction:column;gap:var(--space-2);font-size:var(--text-sm);color:var(--text-secondary);line-height:1.6">
+          <li><strong>D9 Kanazawa → Shirakawa-gō → Takayama</strong> — Nohi / Hokutetsu highway bus (~1 h 15 + ~50 min). Reserve ahead; it fills over the holiday weekend.</li>
+          <li><strong>D10 Takayama → Shinhotaka Ropeway</strong> — Nohi Bus from the Nohi Bus Center (~90 min, no reservation, roughly hourly). Last bus back 16:55.</li>
+          <li><strong>D11 Takayama → Nagoya</strong> — Limited Express Hida (~2.5 h) down the gorge; reserved window seat. Inuyama is a Meitetsu hop from Nagoya.</li>
+          <li><strong>Luggage</strong> — reserve early for the space; on the Tōkaidō Shinkansen book an oversized-baggage seat if a case tops 160 cm total.</li>
+          <li><strong>Pass</strong> — the Takayama–Hokuriku Area Tourist Pass covers most of this loop; price it against singles.</li>
+        </ul>
+      </div>
+      <div style="background:var(--warning-wash);border-radius:var(--radius-md);padding:var(--space-6);box-shadow:var(--shadow-xs)">
+        <div class="eyebrow" style="color:var(--warning);margin-bottom:var(--space-3)">Heads-up</div>
+        <h3 style="font-size:var(--text-lg);font-weight:500;margin-bottom:var(--space-4)">Holiday weekend</h3>
+        <ul style="padding-left:18px;display:flex;flex-direction:column;gap:var(--space-2);font-size:var(--text-sm);color:var(--text-secondary);line-height:1.6">
+          <li><strong>Mon 23 Nov is a public holiday</strong> (Labour Thanksgiving), so 21–23 Nov is a three-day weekend.</li>
+          <li>It overlaps Kakusenkei, Shirakawa-gō and Takayama (D8–D10) — expect heavy crowds, full transport, and busy buses and ropeway. Kōrankei falls safely after, on Wed 25.</li>
+          <li>Book buses and reserved-seat trains well ahead, and start early at Shirakawa-gō.</li>
+        </ul>
+      </div>
+      <div style="background:var(--sand);border-radius:var(--radius-md);padding:var(--space-6);box-shadow:var(--shadow-xs)">
+        <h3 style="font-size:var(--text-lg);font-weight:500;margin-bottom:var(--space-4)">Transport passes</h3>
+        <ul style="padding-left:18px;display:flex;flex-direction:column;gap:var(--space-2);font-size:var(--text-sm);color:var(--text-secondary);line-height:1.6">
+          <li>The <strong>Takayama–Hokuriku Area Tourist Pass</strong> fits this loop unusually well — price it against point-to-point tickets.</li>
+          <li>An IC card (ICOCA, Suica or mobile) for local trains, subways and buses.</li>
+          <li>The nationwide JR Pass is probably not worth it for a route this compact.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer style="border-top:1px solid var(--border-default);padding-top:var(--space-8);text-align:center">
+    <p class="eyebrow">Itinerary draft · 14–28 Nov 2026 · adjust freely</p>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
